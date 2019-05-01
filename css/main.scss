@@ -1,0 +1,187 @@
+@font-face{
+    font-family: 'AlegreyaSans';
+    src:url("/fonts/AlegreyaSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'MuseoSansCyrl';
+    src:url("/fonts/MuseoSansCyrl.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+ @font-face{
+    font-family: 'AlegreyaSansExtraBold';
+    src:url("/fonts/AlegreyaSans-ExtraBold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  
+}       
+
+
+
+
+
+
+body{
+    font-family: 'AlegreyaSans';
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+}
+
+.container{
+    width: 960px;
+    margin:0 auto;
+}
+
+.header{
+
+    position: absolute;
+    width:100%;
+    padding: 10px;
+
+    .navigator{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &__logo{
+            font-family: 'MuseoSansCyrl';
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size:24px;
+            line-height: 20px;
+
+            }
+
+        &__menu{
+            display: flex;
+            list-style-type: none;
+        }
+
+        &__item{
+            margin:5px;
+            font-size: 18px;
+        }
+
+        &__link{
+            color:white;
+            text-decoration: none;
+        }
+        &__phone{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            &:before{
+                content:url("/icons/phone.png");
+                margin: 5px;
+            }
+        }
+    }
+}
+
+
+.main{
+   width:1100px;
+   margin:0 auto;
+    .screen{
+
+        &__first{
+            background: url("/img/bg-1.png") no-repeat;
+            background-size: auto;
+            height: 650px;
+            width: 100%;
+
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                height: 100%;
+                justify-content: flex-end;
+            }
+            
+            &:after{
+                    background: url("/img/bg-1-berries.png")  no-repeat;
+                    height:353px;
+                    width:1080px;
+                    position: absolute;
+                    top:347px;
+                    margin-left: 33px;
+                    content:""
+                } 
+            
+            .chocolate{
+                position: relative;
+                width:410px;
+                color:white;
+                padding: 5px;
+                z-index: 2;
+                &__header{
+                    text-transform: uppercase;
+                    font-size:60px;
+                    font-weight: bold;
+                    padding: 5px;
+                    margin:0px;
+                }
+                &__body{
+                    font-size:21px;
+                    padding: 5px;
+                    margin:0px;
+                }
+                &__button{
+                    text-transform: uppercase;
+                    font-size:19px;
+                    border-left-color:#006633;
+                    font-family: 'AlegreyaSansExtraBold';
+                    background: white;
+                    padding: 20px 35px;
+                    border: none;
+                    border-radius: 50px;
+                }
+            }   
+            .information{
+                z-index:2;
+                position: relative;
+                &__list{
+                    display: flex;
+                    list-style-type: none;
+                }
+                &__item{
+                    color:white;
+                    font-size:16px; 
+                }
+                &__natural,&__delivery,&__calorie{
+                    width:92px;
+                }
+                &__natural:before{
+                    content:"";
+                    display:block;
+                    background:url("/icons/natural.svg") no-repeat;
+                    margin: 5px;
+                    height:43px;
+                }
+                &__delivery:before{
+                    content:"";
+                    display:block;
+                    background:url("/icons/delivery.svg") no-repeat;
+                    margin: 5px;
+                    height:43px;
+                }
+                &__calorie:before{
+                    content:"";
+                    display:block;
+                    background:url("/icons/calorie.svg") no-repeat;
+                    margin: 5px;
+                    height:43px;
+                }
+                
+            }
+
+            path{fill:red;}
+            
+    
+    
+        }
+    }
+}

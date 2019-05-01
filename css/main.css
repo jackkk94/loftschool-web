@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'AlegreyaSans';
+  src: url("/fonts/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url("/fonts/MuseoSansCyrl.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AlegreyaSansExtraBold';
+  src: url("/fonts/AlegreyaSans-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+body {
+  font-family: 'AlegreyaSans';
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 10px; }
+  .header .navigator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .header .navigator__logo {
+      font-family: 'MuseoSansCyrl';
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 20px; }
+    .header .navigator__menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style-type: none; }
+    .header .navigator__item {
+      margin: 5px;
+      font-size: 18px; }
+    .header .navigator__link {
+      color: white;
+      text-decoration: none; }
+    .header .navigator__phone {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 24px; }
+      .header .navigator__phone:before {
+        content: url("/icons/phone.png");
+        margin: 5px; }
+
+.main {
+  width: 1100px;
+  margin: 0 auto; }
+  .main .screen__first {
+    background: url("/img/bg-1.png") no-repeat;
+    background-size: auto;
+    height: 650px;
+    width: 100%; }
+    .main .screen__first .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;
+      height: 100%;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .main .screen__first:after {
+      background: url("/img/bg-1-berries.png") no-repeat;
+      height: 353px;
+      width: 1080px;
+      position: absolute;
+      top: 347px;
+      margin-left: 33px;
+      content: ""; }
+    .main .screen__first .chocolate {
+      position: relative;
+      width: 410px;
+      color: white;
+      padding: 5px;
+      z-index: 2; }
+      .main .screen__first .chocolate__header {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: bold;
+        padding: 5px;
+        margin: 0px; }
+      .main .screen__first .chocolate__body {
+        font-size: 21px;
+        padding: 5px;
+        margin: 0px; }
+      .main .screen__first .chocolate__button {
+        text-transform: uppercase;
+        font-size: 19px;
+        border-left-color: #006633;
+        font-family: 'AlegreyaSansExtraBold';
+        background: white;
+        padding: 20px 35px;
+        border: none;
+        border-radius: 50px; }
+    .main .screen__first .information {
+      z-index: 2;
+      position: relative; }
+      .main .screen__first .information__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        list-style-type: none; }
+      .main .screen__first .information__item {
+        color: white;
+        font-size: 16px; }
+      .main .screen__first .information__natural, .main .screen__first .information__delivery, .main .screen__first .information__calorie {
+        width: 92px; }
+      .main .screen__first .information__natural:before {
+        content: "";
+        display: block;
+        background: url("/icons/natural.svg") no-repeat;
+        margin: 5px;
+        height: 43px; }
+      .main .screen__first .information__delivery:before {
+        content: "";
+        display: block;
+        background: url("/icons/delivery.svg") no-repeat;
+        margin: 5px;
+        height: 43px; }
+      .main .screen__first .information__calorie:before {
+        content: "";
+        display: block;
+        background: url("/icons/calorie.svg") no-repeat;
+        margin: 5px;
+        height: 43px; }
+    .main .screen__first path {
+      fill: red; }
