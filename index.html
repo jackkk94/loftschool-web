@@ -1,72 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-
-    <header class="header">              
-        <nav class="navigator container">
-           <h2 class="navigator__logo"><a  href="" class="navigator__link">CHO<br> CCO</a></h2>
-            <ul class="navigator__menu">
-                <li class="navigator__item"><a class="navigator__link" href="">О нас </a></li>
-                <li class="navigator__item"><a class="navigator__link" href="">Батончики </a></li>
-                <li class="navigator__item"><a class="navigator__link" href="">Команда</a></li>
-                <li class="navigator__item"><a class="navigator__link" href="">Меню </a></li>
-                <li class="navigator__item"><a class="navigator__link" href="">Отзывы</a></li>
-                <li class="navigator__item"><a class="navigator__link" href="">Как мы работаем</a></li>
-                <li class="navigator__item"><a class="navigator__link" href="">Контакты</a></li>
-            </ul>
-            <p class="navigator__phone"> <a class="navigator__link" href="">8 800 903 90 90</a></p>
-        </nav>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigator container">
+        <h2 class="navigator__logo">
+          <a href="" class="navigator__link"
+            >CHO<br />
+            CCO</a
+          >
+        </h2>
+        <ul class="navigator__menu">
+          <li class="navigator__item">
+            <a class="navigator__link" href="">О нас </a>
+          </li>
+          <li class="navigator__item">
+            <a class="navigator__link" href="">Батончики </a>
+          </li>
+          <li class="navigator__item">
+            <a class="navigator__link" href="">Команда</a>
+          </li>
+          <li class="navigator__item">
+            <a class="navigator__link" href="">Меню </a>
+          </li>
+          <li class="navigator__item">
+            <a class="navigator__link" href="">Отзывы</a>
+          </li>
+          <li class="navigator__item">
+            <a class="navigator__link" href="">Как мы работаем</a>
+          </li>
+          <li class="navigator__item">
+            <a class="navigator__link" href="">Контакты</a>
+          </li>
+        </ul>
+        <p class="navigator__phone">
+          <a class="navigator__link" href="">8 800 903 90 90</a>
+        </p>
+      </nav>
     </header>
     <main class="main ">
-        <div class="screen">
-                <div class="screen__first">
-                    <div class="container">
-                        <section class="chocolate">
-                                <h3 class="chocolate__header">натуральные <br>
-                                        шоколадные <br>
-                            батончики</h3>
-                                <p class="chocolate__body">Наши батончики идеально подходят для 
-                                        тех, кто следит за своим здоровьем</p>
-                                    
-                                        <input type="button" class="chocolate__button" value="Заказать">
-                        </section>
-                        <section class="information">
-                            <ul class="information__list">
-                                <li class="information__item">
-                                    
-                                    <div class="information__natural">100% 
-                                            натуральный 
-                                            продукт</div>
-                                </li>
-                                <li class="information__item">
-                                       
-                                    <div class="information__delivery">3-5 дней
-                                            доставка 
-                                            по РФ</div>
-                                </li>
-                                <li class="information__item">
-                                    <div class="information__calorie">Не портит
-                                            фигуру</div>
-                                </li>
-                            </ul>
-                        </section>
-                        
-                        </div>
-            
-                </div>    
-        </div>
-       
-    </main>
-    <footer class="">
+      <div class="screen first">
+        <div class="screen__container">
+          <div class="container">
+            <section class="chocolate">
+              <h3 class="chocolate__header">
+                натуральные <br />
+                шоколадные <br />
+                батончики
+              </h3>
+              <p class="chocolate__body">
+                Наши батончики идеально подходят для <br />
+                тех, кто следит за своим здоровьем
+              </p>
+              <div class="chocolate__order">
+                <input type="button" class="order__button" value="Заказать" />
+              </div>
+            </section>
+            <section class="information">
+              <ul class="information__list">
+                <li class="information__item">
+                  <div class="information__natural">
+                    100% <br />
+                    натуральный <br />
+                    продукт
+                  </div>
+                </li>
+                <li class="information__item">
+                  <div class="information__delivery">
+                    3-5 дней<br />
+                    доставка <br />
+                    по РФ
+                  </div>
+                </li>
+                <li class="information__item">
+                  <div class="information__calorie">
+                    Не портит<br />
+                    фигуру
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
 
-    </footer>
-</body>
+          <div class="first__background sheet"></div>
+          <div class="first__background candy"></div>
+          <div class="first__background berries"></div>
+          <div class="scroller_page">
+            <ul class="scroller">
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+              <li class="scroller__item">
+                <a href="" class="scroller__link">
+                  <div class="circle"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="screen second">
+        <div class="screen__container">
+          <div class="container">
+<div class="vantage">
+    <h3 class="vantage__header"></h3>
+    <p class="vantage__text"></p>
+</div>
+
+
+          </div>
+          <div class="container">
+<ul class="vantage__list">
+    <li class="vantage__item">
+        <img src="" alt="" class="vantage__icon">
+        <h4 class="vantage__name">Полезно</h4>
+        <p class="vantage__text">Натуральность - ключевое качество
+                нашей продукции. Мы используем
+                только природные ингредиенты.</p>
+    </li>
+    <li class="vantage__item">
+        <img src="" alt="" class="vantage__icon">
+        <h4 class="vantage__name">Вкусно</h4>
+        <p class="vantage__text">Нежный, ненавязчивый, изысканный – 
+                так клиенты описывают вкусовые 
+                качества наших батончиков.</p>
+    </li>
+    <li class="vantage__item">
+        <img src="" alt="" class="vantage__icon">
+        <h4 class="vantage__name">Питательно</h4>
+        <p class="vantage__text">Высокое содержание качественного 
+                белка, а также всех необходимых 
+                витаминов и минералов.</p>
+    </li>
+</ul>
+
+
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class=""></footer>
+  </body>
 </html>
