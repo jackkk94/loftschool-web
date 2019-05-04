@@ -5,6 +5,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: "AlegreyaSansBold";
+  src: url("/fonts/AlegreyaSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
   font-family: "MuseoSansCyrl";
   src: url("/fonts/MuseoSansCyrl.otf");
   font-weight: normal;
@@ -93,7 +99,7 @@ body {
       margin: 0 auto;
       height: 100%;
       position: relative; }
-      .main .screen__container .container {
+      .main .screen__container .wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -128,6 +134,106 @@ body {
         width: 1080px;
         top: 347px;
         margin-left: 33px; }
+      .main .screen__container .second__background {
+        position: absolute; }
+      .main .screen__container .vantage {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 136px 0px 0px 0px; }
+        .main .screen__container .vantage__header {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-family: AlegreyaSansBold;
+          font-size: 48px;
+          text-align: center;
+          width: 430px;
+          margin: 0px;
+          padding: 5px; }
+        .main .screen__container .vantage__text {
+          text-align: center;
+          width: 430px;
+          margin: 0px;
+          padding: 5px;
+          font-size: 18px;
+          width: inherit; }
+        .main .screen__container .vantage__list {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          list-style-type: none;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding-left: 0px; }
+        .main .screen__container .vantage__name {
+          width: inherit;
+          font-size: 27px;
+          font-weight: bold; }
+        .main .screen__container .vantage__item {
+          padding: 5px;
+          min-width: 260px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+        .main .screen__container .vantage__pic {
+          background-color: #F2F5F4;
+          border-radius: 50%;
+          width: 125px;
+          height: 125px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+        .main .screen__container .vantage__icon {
+          width: 66px; }
+      .main .screen__container .sheets {
+        background: url("/img/bg-2-sheet.png") no-repeat;
+        height: 100%;
+        width: 300px;
+        top: 238px; }
+      .main .screen__container .strawberry {
+        background: url("/img/bg-2-strawberry.png") no-repeat;
+        height: 100%;
+        width: 300px;
+        top: 492px; }
+      .main .screen__container .dots {
+        background: url("/img/bg-2-dots.png") no-repeat;
+        height: 100px;
+        width: 200px;
+        top: 354px;
+        left: 352px; }
+        .main .screen__container .dots--double {
+          background: url("/img/bg-2-dots.png") no-repeat;
+          height: 100px;
+          width: 200px;
+          top: 354px;
+          left: 693px; }
       .main .screen__container .scroller_page {
         position: absolute;
         top: 193px;

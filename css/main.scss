@@ -6,6 +6,12 @@ $blue: #66cccc;
   font-style: normal;
 }
 @font-face {
+  font-family: "AlegreyaSansBold";
+  src: url("/fonts/AlegreyaSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
   font-family: "MuseoSansCyrl";
   src: url("/fonts/MuseoSansCyrl.otf");
   font-weight: normal;
@@ -91,6 +97,7 @@ body {
   .first {
     background: $blue;
   }
+
   .screen {
     height: 650px;
     &__container {
@@ -98,7 +105,7 @@ body {
       margin: 0 auto;
       height: 100%;
       position: relative;
-      .container {
+      .wrapper {
         display: flex;
         flex-direction: column;
         align-items: baseline;
@@ -130,6 +137,105 @@ body {
         top: 347px;
         margin-left: 33px;
       }
+
+
+      .second__background{
+        position:absolute;
+      
+      }
+      .vantage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 136px 0px 0px 0px;
+        &__header{
+          text-transform: uppercase;
+          font-weight: bold;
+          font-family: AlegreyaSansBold;
+          font-size:48px;
+          text-align: center;
+          width:430px;
+          margin:0px;
+          padding:5px;
+        }
+        &__text{
+          text-align: center;
+          width:430px;
+          margin:0px;
+          padding:5px;
+          font-size: 18px;
+          width:inherit;
+        }
+        &__list{
+          display: flex;
+          list-style-type: none;
+          justify-content: center;
+          align-items: center;
+          padding-left: 0px;
+        }
+        &__name{
+          width:inherit;
+          font-size: 27px;
+          font-weight: bold;
+        }
+
+        &__item{
+          padding: 5px;
+          min-width:260px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        &__pic{
+          background-color:#F2F5F4; 
+          border-radius:50%;
+          width:125px;
+          height:125px;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+
+        }
+        &__icon{
+          width:66px;
+
+        }
+      }
+
+
+      .sheets{
+        background: url("/img/bg-2-sheet.png") no-repeat;
+        height: 100%;
+        width: 300px;
+        top: 238px;
+      }
+
+      .strawberry{
+        background: url("/img/bg-2-strawberry.png") no-repeat;
+        height: 100%;
+        width: 300px;
+        top: 492px;
+
+      }
+
+      .dots{
+        background: url("/img/bg-2-dots.png") no-repeat;
+        height: 100px;
+        width: 200px;
+        top: 354px;
+        left: 352px;
+        &--double{
+          background: url("/img/bg-2-dots.png") no-repeat;
+          height: 100px;
+          width: 200px;
+          top: 354px;
+          left: 693px;
+        }
+      }
+
+
+
 
       .scroller_page {
         position: absolute;
