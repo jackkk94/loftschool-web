@@ -5,6 +5,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: "AlegreyaSansMedium";
+  src: url("/fonts/AlegreyaSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: "AlegreyaSansBold";
   src: url("/fonts/AlegreyaSans-Bold.ttf") format("truetype");
   font-weight: bold;
@@ -92,6 +98,34 @@ body {
   margin: 0 auto; }
   .main .first {
     background: #66cccc; }
+  .main .comment {
+    padding-top: 180px; }
+    .main .comment__background {
+      position: absolute; }
+      .main .comment__background--sheets {
+        background: url("/img/bg-3-sheet.png") no-repeat;
+        height: 353px;
+        width: 1080px;
+        top: 347px;
+        margin-left: 33px; }
+      .main .comment__background--strawberry {
+        background: url("/img/bg-3-strawberry.png") no-repeat;
+        height: 353px;
+        width: 1080px;
+        top: 347px;
+        margin-left: 33px; }
+      .main .comment__background--berries {
+        background: url("/img/bg-3-berries.png") no-repeat;
+        height: 353px;
+        width: 1080px;
+        top: 347px;
+        margin-left: 33px; }
+      .main .comment__background--pattern {
+        background: url("/img/bg-3-pattern.png") no-repeat;
+        height: 353px;
+        width: 1080px;
+        top: 347px;
+        margin-left: 33px; }
   .main .screen {
     height: 650px; }
     .main .screen__container {
@@ -136,6 +170,133 @@ body {
         margin-left: 33px; }
       .main .screen__container .second__background {
         position: absolute; }
+      .main .screen__container .comment__header {
+        text-align: left;
+        font-weight: bold;
+        font-size: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        padding-left: 11px; }
+      .main .screen__container .user {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 10px;
+        text-align: left; }
+        .main .screen__container .user__comment {
+          width: 100%;
+          background-color: #f2f5f4;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          padding-top: 40px;
+          padding-bottom: 30px; }
+        .main .screen__container .user__pic {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          overflow: hidden;
+          width: 270px;
+          height: auto;
+          padding: 10px;
+          padding-left: 45px;
+          padding-right: 5px; }
+        .main .screen__container .user__img {
+          width: 255px;
+          height: 260px; }
+        .main .screen__container .user .description {
+          position: relative;
+          z-index: 4;
+          padding: 10px;
+          padding-top: 23px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 450px; }
+          .main .screen__container .user .description__header {
+            letter-spacing: 1px;
+            font-family: AlegreyaSansMedium;
+            font-size: 27px;
+            color: #333333;
+            margin: 0px;
+            font-weight: normal;
+            padding-left: 5px; }
+          .main .screen__container .user .description__text {
+            padding: 5px;
+            padding-top: 10px;
+            font-size: 18px;
+            color: #666666;
+            line-height: 21px; }
+          .main .screen__container .user .description__name {
+            padding: 5px;
+            font-family: AlegreyaSansMedium;
+            font-size: 18px;
+            color: #666666; }
+        .main .screen__container .user__list {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          list-style-type: none;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin: 0;
+          padding: 30px 0 0 0; }
+        .main .screen__container .user__item {
+          width: 94px;
+          height: 94px;
+          border-radius: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          overflow: hidden;
+          margin: 20px; }
+        .main .screen__container .user__link {
+          text-decoration: none; }
+          .main .screen__container .user__link .item__pic {
+            width: 112px; }
       .main .screen__container .vantage {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -197,7 +358,7 @@ body {
           -ms-flex-align: center;
           align-items: center; }
         .main .screen__container .vantage__pic {
-          background-color: #F2F5F4;
+          background-color: #f2f5f4;
           border-radius: 50%;
           width: 125px;
           height: 125px;
