@@ -1,0 +1,23 @@
+.user {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 20px;
+  &__avatar {
+    width: 102px;
+    width: 102px;
+    
+    
+  }
+  &-hover {
+    border: 8px solid $green;
+    width: 102px;
+    height: 102px;
+  }
+  
+}

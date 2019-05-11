@@ -1,0 +1,38 @@
+.comment {
+  &__desc {
+    padding: 10px 20px 20px 20px;
+  }
+  &__title {
+    letter-spacing: 1px;
+    font-family: AlegreyaSansMedium;
+    font-size: 27px;
+    color: $black;
+    margin: 0px;
+    font-weight: normal;
+    margin-bottom:22px;
+    letter-spacing: 0.05em;
+   
+  }
+  &__text {
+    font-size: 18px;
+    color: $grey;
+    line-height: 21px;
+    margin-bottom:30px;
+  }
+  &__author {
+    font-family: AlegreyaSansMedium;
+    font-size: 18px;
+    color: $grey;
+  }
+  &__pic{
+    width:254px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    &-img{
+      min-width:254px;
+    }
+  }
+}

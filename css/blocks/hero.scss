@@ -1,0 +1,93 @@
+.hero {
+  background: $blue;
+  color: $white;
+  &__content-images {
+    position: absolute;
+  }
+  &__content {
+    flex: 0.8;
+    margin-top: auto;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 0.028em;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+    line-height: 60px;
+  }
+  &__description {
+    font-size: 21px;
+    padding: 5px;
+    margin: 0px;
+    line-height: 1.1;
+  }
+  &__content-icon {
+    display: flex;
+    z-index: 6;
+  }
+  &__content-images {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    .image {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      z-index: 1;
+    }
+    .sheet1 {
+      bottom: 0px;
+      right: -86px;
+    }
+    .sheet2{
+      z-index: 4;
+      bottom: -40px;
+      right: 928px;
+    }
+    .chocolate {
+      bottom: 115px;
+      right: -58px;
+      z-index: 2;
+    }
+
+    .berries {
+      z-index: 3;
+      bottom: -40px;
+      right: -73px;
+    }
+  }
+}
+
+.icon__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.icon__item {
+  min-width: 140px;
+  margin-right: 42px;
+}
+
+.item__text {
+  color: $white;
+  font-size: 16px;
+  display: flex;
+  &:before {
+    margin: 5px;
+    height: 43px;
+  }
+
+  &-natural:before {
+    content: url("/img/hero/icon-natural.png");
+  }
+
+  &-delivery:before {
+    content: url("/img/hero/icon-delivery.png");
+  }
+  &-calorie:before {
+    content: url("/img/hero/icon-calorie.png");
+  }
+}

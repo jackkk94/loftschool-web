@@ -1,0 +1,76 @@
+.comments {
+  .container{
+    justify-content: center;
+  }
+  &__header {
+    text-align: left;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-left: 11px;
+    position: relative;
+    z-index: 6;
+    margin-bottom: 42px;
+  }
+  &__content {
+    padding: 48px 160px 51px 49px;
+    position: relative;
+    text-align: left;
+    background-color: $bg_grey;
+    height: 351px;
+    margin-bottom:23px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -61px;
+      right: 425px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: $white;
+    }
+    &::after {
+      content: "";
+      top: 0px;
+      right: 0px;
+      position: absolute;
+      background: url("/img/comment/berrie.png") center center no-repeat;
+      width: 129px;
+      height: 155px;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: row;
+  }
+  &__users {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  &__images{
+    .image{
+      position: absolute;
+    }
+    .strawberry{
+      top:15px;
+      right:-77px;
+    }
+    .berries{
+      bottom:-123px;
+      left:-77px;
+      z-index: 2;
+    }
+    .pattern{
+      bottom:-145px;
+      left:-77px;
+      z-index: 1;
+    }
+  }
+}

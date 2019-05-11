@@ -1,0 +1,41 @@
+.why {
+  align-items: center;
+  &__text {
+    text-align: center;
+    width: 430px;
+    margin: 0px;
+    padding: 5px;
+    font-size: 18px;
+    width: inherit;
+    color: $grey;
+  }
+  &__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 37px;
+  }
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  &__images {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    .image {
+      position: absolute;
+    }
+    .sheet {
+      bottom: 297px;
+      right: -112px;
+    }
+    .strawberry {
+      bottom: -119px;
+      right: -81px;
+    }
+  }
+}

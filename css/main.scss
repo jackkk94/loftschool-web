@@ -1,5 +1,115 @@
-$blue: #66cccc;
-$grey: #f2f5f4;
+$blue: #61c4d9;
+$bggrey: #f2f5f4;
+$green: #0f5a47;
+$black: #0d0d0d;
+$grey: #808080;
+$berrie: #cfdeda;
+$bg_grey: #f8faf9;
+$white: white;
+
+@import "normalize.css";
+@import "blocks/hero.scss";
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/phone.scss";
+@import "blocks/logo.scss";
+@import "blocks/btn.scss";
+@import "blocks/why.scss";
+@import "blocks/feature.scss";
+@import "blocks/comments.scss";
+@import "blocks/comment.scss";
+@import "blocks/user.scss";
+
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  font-family: "AlegreyaSans";
+  color: $black;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 940px + 20px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  &__title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: AlegreyaSansBold;
+    font-size: 48px;
+    text-align: center;
+    width: 430px;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    line-height: 1;
+  }
+}
+
+.container {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+// tag styles reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    list-style: none;
+  }
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
 @font-face {
   font-family: "AlegreyaSans";
   src: url("/fonts/AlegreyaSans-Regular.ttf") format("truetype");
@@ -36,465 +146,4 @@ $grey: #f2f5f4;
   src: url("/fonts/icomoon.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-}
-
-body {
-  font-family: "AlegreyaSans";
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.container {
-  width: 960px;
-  margin: 0 auto;
-
-}
-
-.header {
-  position: absolute;
-  width: 100%;
-  z-index: 4;
-  .navigator {
-   
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &__logo {
-      padding-left: 10px;
-      font-family: "MuseoSansCyrl";
-      text-transform: uppercase;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 20px;
-    }
-
-    &__menu {
-      display: flex;
-      min-width: 670px;
-      list-style-type: none;
-      justify-content: space-around;
-      padding-left: 0px;
-    }
-
-    &__item {
-      margin: 5px;
-      font-size: 18px;
-    }
-
-    &__link {
-      color: white;
-      text-decoration: none;
-    }
-    &__phone {
-      display: flex;
-      align-items: center;
-      font-size: 24px;
-      &:before {
-        content: url("/icons/phone.png");
-        margin: 5px;
-      }
-    }
-  }
-}
-
-.main {
-  width: 100%;
-  margin: 0 auto;
-  .first {
-    background: $blue;
-  }
-  .comment{
-    padding-top:180px;
-    &__background{
-      position: absolute;
-      &--sheets{
-        background: url("/img/bg-3-sheet.png") no-repeat;
-        height: 353px;
-        width: 1080px;
-        top: 347px;
-        margin-left: 33px;
-      }
-      &--strawberry{
-        background: url("/img/bg-3-strawberry.png") no-repeat;
-        height: 353px;
-        width: 1080px;
-        top: 347px;
-        margin-left: 33px;
-      }
-      &--berries{
-        background: url("/img/bg-3-berries.png") no-repeat;
-        height: 353px;
-        width: 1080px;
-        top: 347px;
-        margin-left: 33px;
-      }
-      &--pattern{
-        background: url("/img/bg-3-pattern.png") no-repeat;
-        height: 353px;
-        width: 1080px;
-        top: 347px;
-        margin-left: 33px;
-      }
-    }
-    
-
-  }
-  .screen {
-    height: 650px;
-
-    
-    &__container {
-      width: 1100px;
-      margin: 0 auto;
-      height: 100%;
-      position: relative;
-      .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        height: 100%;
-        justify-content: flex-end;
-      }
-
-      .first__background {
-        position: absolute;
-      }
-      .sheet {
-        background: url("/img/bg-sheet.png") no-repeat;
-        height: 100%;
-        width: 514px;
-        bottom: 0px;
-        right: 0px;
-      }
-      .candy {
-        background: url("/img/bg-chocolate.png") no-repeat;
-        height: 100%;
-        width: 514px;
-        top: 54px;
-        right: 17px;
-      }
-      .berries {
-        background: url("/img/bg-berries.png") no-repeat;
-        height: 353px;
-        width: 1080px;
-        top: 347px;
-        margin-left: 33px;
-      }
-
-      .second__background {
-        position: absolute;
-      }
-
-
-      .comment__header {
-        text-align: left;
-        font-weight: bold;
-        font-size: 48px;
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 2px;
-        padding-left: 11px;
-      }
-      .user {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-left: 10px;
-        text-align: left;
-        
-        &__comment {
-          width:100%;
-          background-color: $grey;
-          display: flex;
-          align-items: flex-start;
-          justify-content: flex-start;
-          padding-top: 40px;
-          padding-bottom: 30px;
-          
-        }
-        &__pic {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          overflow: hidden;
-          width: 270px;
-          height: auto;
-          padding: 10px;
-          padding-left: 45px;
-          padding-right: 5px;
-        }
-        &__img {
-          width: 255px;
-          height: 260px;
-        }
-        .description {
-          position: relative;
-          z-index: 4;
-          padding: 10px;
-          padding-top:23px;
-          display: flex;
-          align-items: flex-start;
-          justify-content: center;
-          flex-direction: column;
-
-          width: 450px;
-          &__header {
-            letter-spacing: 1px;
-            font-family: AlegreyaSansMedium;
-            font-size: 27px;
-            color: #333333;
-            margin:0px;
-            font-weight: normal;
-            padding-left: 5px;
-          }
-          &__text {
-            padding: 5px;
-            padding-top:10px;
-            font-size: 18px;
-            color: #666666;
-            line-height: 21px;
-            
-          }
-          &__name {
-            padding: 5px;
-            font-family: AlegreyaSansMedium;
-            font-size: 18px;
-            color: #666666;
-          }
-        }
-        &__list {
-          display: flex;
-          list-style-type: none;
-          justify-content: center;
-          align-items: center;
-          margin: 0;
-          padding:30px 0 0 0 ;
-        }
-        &__item {
-          width: 94px;
-          height: 94px;
-          border-radius: 50%;
-          // border: 2px solid #006633;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          margin: 20px;
-        }
-        &__link {
-          text-decoration: none;
-          .item__pic {
-            width: 112px;
-          }
-        }
-      }
-
-      .vantage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 136px 0px 0px 0px;
-        &__header {
-          text-transform: uppercase;
-          font-weight: bold;
-          font-family: AlegreyaSansBold;
-          font-size: 48px;
-          text-align: center;
-          width: 430px;
-          margin: 0px;
-          padding: 5px;
-        }
-        &__text {
-          text-align: center;
-          width: 430px;
-          margin: 0px;
-          padding: 5px;
-          font-size: 18px;
-          width: inherit;
-        }
-        &__list {
-          display: flex;
-          list-style-type: none;
-          justify-content: center;
-          align-items: center;
-          padding-left: 0px;
-        }
-        &__name {
-          width: inherit;
-          font-size: 27px;
-          font-weight: bold;
-        }
-
-        &__item {
-          padding: 5px;
-          min-width: 260px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        &__pic {
-          background-color: $grey;
-          border-radius: 50%;
-          width: 125px;
-          height: 125px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-        }
-        &__icon {
-          width: 66px;
-        }
-      }
-
-      .sheets {
-        background: url("/img/bg-2-sheet.png") no-repeat;
-        height: 100%;
-        width: 300px;
-        top: 238px;
-      }
-
-      .strawberry {
-        background: url("/img/bg-2-strawberry.png") no-repeat;
-        height: 100%;
-        width: 300px;
-        top: 492px;
-
-      }
-
-      .dots {
-        background: url("/img/bg-2-dots.png") no-repeat;
-        height: 100px;
-        width: 200px;
-        top: 354px;
-        left: 352px;
-        &--double {
-          background: url("/img/bg-2-dots.png") no-repeat;
-          height: 100px;
-          width: 200px;
-          top: 354px;
-          left: 693px;
-        }
-      }
-
-      .scroller_page {
-        position: absolute;
-        top: 193px;
-        right: 24px;
-        height: 100%;
-        width: 100px;
-        .scroller {
-          display: flex;
-          list-style-type: none;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          &__item {
-            margin: 8px;
-          }
-          &__link {
-            text-decoration: none;
-            &:hover > div {
-              margin: 0 auto;
-              &:after {
-                border: 1px solid white;
-                border-radius: 50%;
-                width: 16px;
-                display: block;
-                height: 16px;
-                margin: 0 auto;
-                content: "";
-                position: absolute;
-                margin-left: -6.5px;
-                margin-top: -6.5px;
-              }
-            }
-          }
-        }
-      }
-
-      .chocolate {
-        word-wrap: break-word;
-        position: relative;
-        width: 425px;
-        color: white;
-        padding: 5px;
-        z-index: 2;
-        &__header {
-          text-transform: uppercase;
-          font-size: 60px;
-          letter-spacing: 1px;
-          font-weight: bold;
-          padding: 5px 0px 5px 0px;
-          margin: 0px;
-          line-height: 60px;
-        }
-        &__body {
-          font-size: 21px;
-          padding: 5px;
-          margin: 0px;
-        }
-        &__order {
-          padding: 22px 0px 58px 0;
-          .order__button {
-            text-transform: uppercase;
-            font-size: 19px;
-            border-left-color: #006633;
-            font-family: "AlegreyaSansExtraBold";
-            background: white;
-            padding: 20px 35px;
-            border: none;
-            border-radius: 50px;
-          }
-        }
-      }
-      .information {
-        z-index: 2;
-        position: relative;
-        padding-bottom: 45px;
-        &__list {
-          display: flex;
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-        }
-        &__item {
-          color: white;
-          font-size: 16px;
-        }
-        &__natural,
-        &__delivery,
-        &__calorie {
-          min-width: 120px;
-          display: flex;
-          margin: 5px;
-        }
-        &__natural:before {
-          content: url("/img/icon-natural.png");
-          margin: 5px;
-          height: 43px;
-        }
-        &__delivery:before {
-          content: url("/img/icon-delivery.png");
-          margin: 5px;
-          height: 43px;
-        }
-        &__calorie:before {
-          content: url("/img/icon-calorie.png");
-          margin: 5px;
-          height: 43px;
-        }
-      }
-    }
-  }
-  .circle {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: white;
-  }
 }

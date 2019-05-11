@@ -1,0 +1,11 @@
+.phone{
+  &__link{
+    text-decoration: none;
+    color:$white;
+    font-size: 24px;
+    &:before {
+      content: url("/icons/phone.png");
+      margin: 5px;
+    }
+  }
+}

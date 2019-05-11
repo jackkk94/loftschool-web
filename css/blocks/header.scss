@@ -1,0 +1,11 @@
+.header{
+    display:flex;
+    padding: 23px 0;
+    align-items: center;
+    justify-content: space-between;
+    &__order-btn{
+        margin-top: 29px;
+        margin-bottom: 65px;
+        margin-left: 7px;
+    }
+}

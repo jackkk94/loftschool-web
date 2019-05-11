@@ -1,0 +1,51 @@
+.feature {
+  padding: 5px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__pic {
+    background-color: $bggrey;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-img {
+      width: 66px;
+    }
+   
+  }
+  &__name {
+    width: inherit;
+    font-size: 27px;
+    font-weight: bold;
+    margin-top:29px;
+  }
+  &__text {
+    text-align: center;
+    width: 430px;
+    margin: 0px;
+    padding: 5px;
+    font-size: 18px;
+    width: inherit;
+    color:$grey;
+    margin-top:10px;
+  }
+  &::after{
+    content: "";
+    display: block;
+    width: 70px;
+    position: relative;
+    top: -234px;
+    left: 157px;
+    height: 50px;
+    background: url(/img/why/dots.png) no-repeat;
+
+  }
+  &:last-child::after{
+    background: #fff;
+    content: "";
+  }
+}
