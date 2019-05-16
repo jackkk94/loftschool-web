@@ -1,9 +1,7 @@
 @import url(normalize.css);
 .hero {
-  background: #61c4d9;
+  background: url(/img/hero/sheet1.png) right center/contain no-repeat #61c4d9;
   color: white; }
-  .hero__content-images {
-    position: absolute; }
   .hero__content {
     -webkit-box-flex: 0.8;
     -ms-flex: 0.8;
@@ -16,12 +14,21 @@
     font-weight: bold;
     padding: 5px 0px 5px 0px;
     margin: 0px;
-    line-height: 60px; }
+    line-height: 60px;
+    width: 50%; }
   .hero__description {
     font-size: 21px;
     padding: 5px;
     margin: 0px;
     line-height: 1.1; }
+  .hero__container::after {
+    content: "";
+    width: 110%;
+    height: 353px;
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+    background: url(/img/hero/berries.png) no-repeat; }
   .hero__content-icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -30,23 +37,20 @@
   .hero__content-images {
     position: absolute;
     bottom: 0px;
-    right: 0px; }
+    right: -36px;
+    top: 0;
+    max-width: 503px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .hero__content-images .image {
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-      z-index: 1; }
-    .hero__content-images .sheet1 {
-      bottom: 0px;
-      right: -86px; }
-    .hero__content-images .sheet2 {
-      z-index: 4;
-      bottom: -40px;
-      right: 928px; }
-    .hero__content-images .chocolate {
-      bottom: 115px;
-      right: -58px;
-      z-index: 2; }
+      max-width: 100%; }
     .hero__content-images .berries {
       z-index: 3;
       bottom: -40px;

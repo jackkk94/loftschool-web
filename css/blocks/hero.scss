@@ -1,9 +1,7 @@
 .hero {
-  background: $blue;
+  background: url(/img/hero/sheet1.png) right center / contain no-repeat $blue;
   color: $white;
-  &__content-images {
-    position: absolute;
-  }
+
   &__content {
     flex: 0.8;
     margin-top: auto;
@@ -16,12 +14,23 @@
     padding: 5px 0px 5px 0px;
     margin: 0px;
     line-height: 60px;
+    width:50%;
   }
   &__description {
     font-size: 21px;
     padding: 5px;
     margin: 0px;
     line-height: 1.1;
+  }
+  &__container::after{
+    content: "";
+    width:110%;
+    height: 353px;
+    position: absolute;
+    bottom:-5%;
+    left:-5%;
+    background: url(/img/hero/berries.png)  no-repeat ;
+
   }
   &__content-icon {
     display: flex;
@@ -30,27 +39,16 @@
   &__content-images {
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: -36px;
+    top: 0;
+    max-width: 503px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .image {
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-      z-index: 1;
+      max-width: 100%;
     }
-    .sheet1 {
-      bottom: 0px;
-      right: -86px;
-    }
-    .sheet2{
-      z-index: 4;
-      bottom: -40px;
-      right: 928px;
-    }
-    .chocolate {
-      bottom: 115px;
-      right: -58px;
-      z-index: 2;
-    }
+
 
     .berries {
       z-index: 3;
