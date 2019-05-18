@@ -76,19 +76,5 @@
     margin: 0;
     padding: 0;
   }
-  &__images{
-    .image{
-      position: absolute;
-    }
-    .strawberry{
-      top:15px;
-      right:-77px;
-    }
-    .berries{
-      bottom:-123px;
-      left:-77px;
-      z-index: 2;
-    }
 
-  }
 }

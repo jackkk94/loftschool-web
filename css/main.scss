@@ -19,6 +19,7 @@ $white: white;
 @import "blocks/comments.scss";
 @import "blocks/comment.scss";
 @import "blocks/user.scss";
+@import "blocks/team.scss";
 
 body {
   font-size: 16px;
@@ -51,8 +52,8 @@ body {
     width: 430px;
     margin: 0px;
     padding: 5px;
-    text-align: center;
     line-height: 1;
+    width: 100%;
   }
 }
 
