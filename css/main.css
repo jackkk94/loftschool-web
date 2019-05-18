@@ -292,7 +292,8 @@
   position: absolute;
   bottom: -20%;
   left: 0px;
-  height: 422px; }
+  height: 422px;
+  z-index: 2; }
 
 .comments:after {
   content: "";
@@ -537,6 +538,93 @@
   width: 100%;
   padding-bottom: 6%; }
   .team .item__pic-image {
+    max-width: 100%; }
+
+.card {
+  width: inherit;
+  background: url(/img/contacts/card.png) center center/cover no-repeat;
+  min-height: 90%; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 10%; }
+  .footer__contacts {
+    width: 50%; }
+  .footer__socials {
+    width: 50%; }
+  .footer .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .footer .contact__address {
+      font-size: 21px; }
+    .footer .contact__phone {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 21px;
+      color: #0f5a47; }
+      .footer .contact__phone:before {
+        content: "";
+        width: 12px;
+        height: 11px;
+        display: block;
+        background: url(/img/contacts/phone.png) no-repeat;
+        margin-right: 9px; }
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .social__item {
+    width: 23px;
+    margin-right: 20px; }
+    .social__item:last-child {
+      margin-right: 0; }
+  .social .item-icon {
     max-width: 100%; }
 
 body {

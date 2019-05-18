@@ -1,0 +1,37 @@
+.footer{
+  display: flex;
+  align-items: center;
+  min-height: 10%;
+  &__contacts{
+width:50%;
+  }
+  &__socials{
+    width:50%;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__address{
+      font-size: 21px;
+    }
+    &__phone{
+      display: flex;
+      align-items: center;
+      font-size: 21px;
+      color: $green;
+      &:before{
+        content:"";
+        width:12px;
+        height:11px;
+        display: block;
+        background: url(/img/contacts/phone.png)   no-repeat ;
+        margin-right: 9px;
+      }
+    }
+  }
+  &__container{
+    display: flex;
+    flex-direction: row!important;
+  }
+}
