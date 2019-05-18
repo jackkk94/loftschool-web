@@ -5,6 +5,11 @@
   &__content {
     flex: 0.8;
     margin-top: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-bottom: 50px;
+    width:54%;
   }
   &__title {
     text-transform: uppercase;
@@ -12,15 +17,16 @@
     letter-spacing: 0.028em;
     font-weight: bold;
     padding: 5px 0px 5px 0px;
-    margin: 0px;
+    margin-bottom:12px;
     line-height: 60px;
     width:50%;
   }
   &__description {
     font-size: 21px;
     padding: 5px;
-    margin: 0px;
+    margin-bottom: 10px;
     line-height: 1.1;
+    width:38%;
   }
   &__container::after{
     content: "";
@@ -61,16 +67,16 @@
 .icon__list {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .icon__item {
-  min-width: 140px;
-  margin-right: 42px;
+  max-width: 170px;
+  
 }
 
 .item__text {
-  color: $white;
+
   font-size: 16px;
   display: flex;
   &:before {
@@ -79,13 +85,22 @@
   }
 
   &-natural:before {
-    content: url("/img/hero/icon-natural.png");
+    content: "";
+    background: url("/img/hero/icon-natural.png") center center /contain no-repeat;
+    min-width:65px;
+    height: 46px;
   }
 
   &-delivery:before {
-    content: url("/img/hero/icon-delivery.png");
+    content: "";
+    background: url("/img/hero/icon-delivery.png") center center /contain no-repeat;
+    min-width:65px;
+    height: 46px;
   }
   &-calorie:before {
-    content: url("/img/hero/icon-calorie.png");
+    content: "";
+    background: url("/img/hero/icon-calorie.png") center center /contain no-repeat;
+    min-width:65px;
+    height: 46px;
   }
 }

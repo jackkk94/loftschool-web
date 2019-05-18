@@ -1,4 +1,26 @@
 .comments {
+  &:before{
+    content: "";
+    background: url(/img/comment/left.png)   no-repeat ;
+  
+    display: block;
+    width: 158px;
+    position: absolute;
+    bottom: -20%;
+    left: 0px;
+    height:422px;
+  }
+  
+  &:after{
+    content: "";
+    background: url(/img/comment/strawberry.png)   no-repeat ;
+    display: block;
+    width: 173px;
+    position: absolute;
+    top: 0%;
+    right: 0px;
+    height:99px;
+  }
   .container{
     justify-content: center;
   }
@@ -19,7 +41,7 @@
     position: relative;
     text-align: left;
     background-color: $bg_grey;
-    height: 351px;
+    min-height: 351px;
     margin-bottom:23px;
     &::before {
       content: "";
@@ -67,10 +89,6 @@
       left:-77px;
       z-index: 2;
     }
-    .pattern{
-      bottom:-145px;
-      left:-77px;
-      z-index: 1;
-    }
+
   }
 }

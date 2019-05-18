@@ -1,4 +1,23 @@
 .why {
+  &:before{
+    content: "";
+    background: url("/img/why/sheet.png") center center /contain no-repeat;
+    width:191px;
+    height: 314px;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  &:after{
+    content: "";
+    background: url("/img/why/strawberry.png") center center /contain no-repeat;
+    width:161px;
+    height: 315px;
+    position:absolute;
+    bottom:-5%;
+  }
+
+
   align-items: center;
   &__text {
     text-align: center;
@@ -21,21 +40,5 @@
     justify-content: center;
     align-items: center;
   }
-  &__images {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    .image {
-      position: absolute;
-    }
-    .sheet {
-      bottom: 297px;
-      right: -112px;
-    }
-    .strawberry {
-      bottom: -119px;
-      right: -81px;
-    }
-  }
+
 }

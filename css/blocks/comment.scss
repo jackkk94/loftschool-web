@@ -25,14 +25,14 @@
     color: $grey;
   }
   &__pic{
-    width:254px;
+    min-width:254px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     flex-shrink: 0;
     &-img{
-      min-width:254px;
+      max-width: 100%
     }
   }
 }

@@ -1,6 +1,6 @@
 .feature {
   padding: 5px;
-  min-width: 260px;
+  width:33%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,24 +12,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding:25px;
     &-img {
-      width: 66px;
+      max-width: 100%;
     }
    
   }
   &__name {
-    width: inherit;
     font-size: 27px;
     font-weight: bold;
     margin-top:29px;
   }
   &__text {
     text-align: center;
-    width: 430px;
     margin: 0px;
     padding: 5px;
     font-size: 18px;
-    width: inherit;
     color:$grey;
     margin-top:10px;
   }
