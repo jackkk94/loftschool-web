@@ -543,9 +543,12 @@
 .card {
   width: inherit;
   background: url(/img/contacts/card.png) center center/cover no-repeat;
-  min-height: 90%; }
+  min-height: 100%; }
 
 .footer {
+  position: absolute;
+  background: white;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
