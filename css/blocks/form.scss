@@ -1,8 +1,8 @@
 .form {
   width: 100%;
   display: flex;
-  color:$green;
-  
+  color: $green;
+
   font-family: "OpenSans";
   flex-direction: row;
   justify-content: space-between;
@@ -14,10 +14,13 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
   &__content {
     width: 100%;
+    &-textarea{
+      margin-bottom:7px;
+    }
 
     &--half {
       width: 48%;
@@ -27,7 +30,7 @@
     }
   }
   &__title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   &__input {
     font-size: 18px;
@@ -52,7 +55,45 @@
       border: 3px solid #dde3bd;
     }
   }
-
+  &__radio {
+    appearance: none;
+    &:checked + &-fake:after {
+      opacity: 1;
+    }
+    &-container {
+      display: flex;
+      margin-right:10px;
+    }
+  }
+  &__checkbox {
+    &-container{
+      display: flex;
+    }
+    appearance: none;
+    &:checked + &-fake:after {
+      opacity: 1;
+    }
+    &-fake {
+      width: 26px;
+      height: 26px;
+      margin-right: 9px;
+      background-color: #fff;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      &:after {
+        content: "";
+        width: 3px;
+        height: 8px;
+        border-top: 4px solid #0f5a47;
+        border-left: 4px solid #0f5a47;
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+        transform: rotate(-146deg);
+        border-top-left-radius: 3px;
+      }
+    }
+  }
   &__radio-fake {
     width: 26px;
     height: 26px;
@@ -62,23 +103,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &:after{
-      content:"";
-      width:14px;
+    &:after {
+      content: "";
+      width: 14px;
       height: 14px;
       border-radius: 50%;
       background-color: $green;
       opacity: 0;
-      transition: opacity .3s ease-out;
+      transition: opacity 0.3s ease-out;
     }
+  }
+  .form__row-radio{
+    justify-content: flex-start;
+  }
+  &__buttons{
+    margin-top:23px;
+  }
+  &__button--hover{
+    background-color:$green;
+    color:$white;
+  }
+  &__button-cancel{
+    background: none;
+    font-weight: normal;
+    font-family: "AlegreyaSans";
   }
 }
 
-.delivery{
-  background: url("/img/delivery/bg.png") center center /cover  no-repeat;
+.delivery {
+  background: url("/img/delivery/bg.png") center center / cover no-repeat;
+  &-container{
+    display: flex;
+
+    justify-content: center;
+  }
 }
 
 .section__title-form {
-  margin-top: auto;
-  color:$green;
+  
+  color: $green;
+  margin-bottom:6%!important;
 }

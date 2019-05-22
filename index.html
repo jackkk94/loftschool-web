@@ -246,33 +246,9 @@
 
     </div>
   </section>
-
-  <section class="section contacts">
-    <div class="card"></div>
-    <footer class="footer">
-        <div class="container footer__container">      
-          <div class="footer__contacts contact">
-            <div class="contact__address">Москва, ул.Новый Арбат, д.31/12</div>
-            <div class="contact__phone">8 800 903 90 90</div>
-          </div>
-          <div class="footer__socials social">
-            <ul class="social__list">
-              <li class="social__item"><a href="#" class="list_item-link"><img src="/img/contacts/vk.png" alt="" class="item__icon"></a></li>
-              <li class="social__item"><a href="#" class="list_item-link"><img src="/img/contacts/facebook.png" alt="" class="item__icon"></a></li>
-              <li class="social__item"><a href="#" class="list_item-link"><img src="/img/contacts/inst.png" alt="" class="item__icon"></a></li>
-              <li class="social__item"><a href="#" class="list_item-link"><img src="/img/contacts/twitter.png" alt="" class="item__icon"></a></li>
-            </ul>
-          </div>
-      </div>
-
-    </footer>
-  </section>
-
-
-
   <section class="section delivery">
 
-    <div class="container">
+    <div class="container delivery-container">
         <h3 class="section__title section__title-form">
             Закажите доставку
           </h3>
@@ -311,34 +287,36 @@
             </div>
             <div class="form__column form__column--right">
                 <div class="form__row">
-                    <label for="" class="form__content">
+                    <label for="" class="form__content form__content-textarea">
                         <div class="form__title">Комментарий</div>
                         <textarea name="" id="" cols="30" rows="7" class="form__textarea"></textarea>
                     </label>
                     </div>
-                    <div class="form__row">
-                      <div class="form__radios">
-                        <label for="" class="form__radio-container">
+                    <div class="form__row form__row-radio">
+                      
+                        <label  class="form__radio-container">
                           <input type="radio" class="form__radio" name="radio">
                           <div class="form__radio-fake"></div>
                           <div class="form__title form__title--margin-bottom">Потребуется сдача</div>
                         </label>
-                        <label for="" class="form__radio-container">
+                        <label  class="form__radio-container">
                             <input type="radio" class="form__radio" name="radio">
                             <div class="form__radio-fake"></div>
                             <div class="form__title form__title--margin-bottom">Оплата по карте</div>
                         </label>
                       </div>
+                      <div class="form__row">
                       <div class="form__checkbox">
-                        <label for="" class="form__checkbox-container">
+                        <label  class="form__checkbox-container">
                           <input type="checkbox" class="form__checkbox">
+                          <div class="form__checkbox-fake"></div>
                           <div class="form__title">Не перезванивать</div>
                         </label>
                       </div>
                     </div> 
                     <div class="form__row">
                       <div class="form__buttons">
-                        <button type="submit" class="form__submit btn form__button-ok">Заказать</button>
+                        <button type="submit" class="form__submit btn form__button--hover">Заказать</button>
                         <button type="reset" class="form__reset btn form__button-cancel">Очистить</button>
                       </div>
                     </div>
@@ -347,6 +325,30 @@
      
     </div>
   </section>
+  <section class="section contacts">
+    <div class="card"></div>
+    <footer class="footer">
+        <div class="container footer__container">      
+          <div class="footer__contacts contact">
+            <div class="contact__address">Москва, ул.Новый Арбат, д.31/12</div>
+            <div class="contact__phone">8 800 903 90 90</div>
+          </div>
+          <div class="footer__socials social">
+            <ul class="social__list">
+              <li class="social__item"><a href="#" class="list_item-link"><img src="/img/contacts/vk.png" alt="" class="item__icon"></a></li>
+              <li class="social__item"><a href="#" class="list_item-link"><img src="/img/contacts/facebook.png" alt="" class="item__icon"></a></li>
+              <li class="social__item"><a href="#" class="list_item-link"><img src="/img/contacts/inst.png" alt="" class="item__icon"></a></li>
+              <li class="social__item"><a href="#" class="list_item-link"><img src="/img/contacts/twitter.png" alt="" class="item__icon"></a></li>
+            </ul>
+          </div>
+      </div>
+
+    </footer>
+  </section>
+
+
+
+
 </div>
   </body>
 </html>
