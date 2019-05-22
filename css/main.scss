@@ -24,6 +24,7 @@ $white: white;
 @import "blocks/card.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
+@import "blocks/form.scss";
 
 body {
   font-size: 16px;
@@ -50,7 +51,7 @@ body {
   &__title{
     text-transform: uppercase;
     font-weight: bold;
-    font-family: AlegreyaSansBold;
+    font-family: "AlegreyaSansBold";
     font-size: 48px;
     text-align: center;
     width: 430px;
@@ -119,6 +120,13 @@ footer {
 @font-face {
   font-family: "AlegreyaSans";
   src: url("/fonts/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
