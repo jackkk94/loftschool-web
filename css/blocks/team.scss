@@ -1,7 +1,7 @@
 .team {
   &:before{
     content: "";
-    background: url(/img/team/sheet.png)   no-repeat ;
+    background: url(/img/team/right.png)   no-repeat ;
 
     display: block;
     width: 196px;
@@ -14,12 +14,12 @@
   
   &:after{
     content: "";
-    background: url(/img/team/berrie.png)   no-repeat ;
+    background: url(/img/team/strawberrie.png)   no-repeat ;
     display: block;
     width: 135px;
     position: absolute;
-    top: -7%;
-    right: 0px;
+    bottom: -7%;
+    left: 3%;
     height:112px;
     z-index: 3;
   }

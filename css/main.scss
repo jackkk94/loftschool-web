@@ -25,7 +25,7 @@ $white: white;
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/form.scss";
-
+@import "blocks/menu1.scss";
 body {
   font-size: 16px;
   line-height: 1.42;
@@ -120,6 +120,12 @@ footer {
 @font-face {
   font-family: "AlegreyaSans";
   src: url("/fonts/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AlegreyMedium";
+  src: url("/fonts/AlegreyaSans-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
