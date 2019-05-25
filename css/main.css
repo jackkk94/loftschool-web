@@ -880,6 +880,156 @@
     transition: width 0.3s;
     padding: 55px 32px; }
 
+.slider {
+  background-color: #f8faf9; }
+  .slider__container {
+    overflow: hidden;
+    max-width: 60rem !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .slider .section__title-slider {
+    text-align: left;
+    font-size: 36px;
+    padding: 0;
+    line-height: 1.2; }
+  .slider__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: right 0.3s;
+    -o-transition: right 0.3s;
+    transition: right 0.3s; }
+  .slider__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+  .slider .btn__arrow--prev {
+    width: 40px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    left: 0; }
+  .slider .btn__arrow--next {
+    width: 40px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    right: 0; }
+  .slider__left {
+    width: 50%; }
+  .slider__right {
+    width: 50%;
+    padding: 13px 5px 5px 68px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .slider__image {
+    max-width: 100%; }
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .content__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 20px; }
+  .content__order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .content__composition {
+    width: 100%;
+    margin-bottom: 30px; }
+    .content__composition-title {
+      font-size: 24px;
+      font-family: "AlegreyMedium";
+      color: #323232;
+      margin-bottom: 19px;
+      max-height: 300px;
+      overflow: hidden; }
+    .content__composition-text {
+      font-size: 18px;
+      color: #808080;
+      line-height: 1.2;
+      text-align: left; }
+  .content__calorie {
+    margin-right: 60px; }
+    .content__calorie-title {
+      font-size: 18px;
+      color: #333333; }
+    .content__calorie-text {
+      font-size: 18px;
+      color: #333333;
+      font-weight: bold; }
+  .content__weight-title {
+    font-size: 18px;
+    color: #333333; }
+  .content__weight-text {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold; }
+  .content__order-price {
+    font-size: 60px;
+    font-family: "Alegreya Sans Light";
+    text-transform: uppercase;
+    font-family: "AlegreyLite";
+    margin-right: 30px; }
+  .content__order-btn {
+    background-color: #0f5a47;
+    color: white; }
+
 body {
   font-size: 16px;
   line-height: 1.42;
@@ -965,6 +1115,12 @@ footer {
 @font-face {
   font-family: "AlegreyMedium";
   src: url("/fonts/AlegreyaSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "AlegreyLite";
+  src: url("/fonts/AlegreyaSans-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
