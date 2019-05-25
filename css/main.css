@@ -1028,7 +1028,10 @@
     margin-right: 30px; }
   .content__order-btn {
     background-color: #0f5a47;
-    color: white; }
+    color: white;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
 
 body {
   font-size: 16px;
