@@ -11,6 +11,12 @@
     padding-bottom: 50px;
     width:54%;
   }
+  &__svg{
+    fill: #61c4d9;
+    stroke: #b0f7ff;
+    max-width: 100%;
+    
+  }
   &__title {
     text-transform: uppercase;
     font-size: 60px;
@@ -19,14 +25,14 @@
     padding: 5px 0px 5px 0px;
     margin-bottom:12px;
     line-height: 60px;
-    width:50%;
+    max-width:90%;
   }
   &__description {
     font-size: 21px;
     padding: 5px;
     margin-bottom: 10px;
     line-height: 1.1;
-    width:38%;
+    max-width:75%;
   }
   &__container::after{
     content: "";
@@ -70,37 +76,55 @@
   justify-content: space-between;
 }
 
-.icon__item {
-  max-width: 170px;
-  
-}
+
 
 .item__text {
 
   font-size: 16px;
   display: flex;
-  &:before {
-    margin: 5px;
-    height: 43px;
-  }
+  // &:before {
+  //   margin: 5px;
+  //   height: 43px;
+  // }
 
-  &-natural:before {
-    content: "";
-    background: url("/img/hero/icon-natural.png") center center /contain no-repeat;
-    min-width:65px;
-    height: 46px;
-  }
+  // &-natural:before {
+  //   content: "";
+  //   background: url("/img/hero/icon-natural.png") center center /contain no-repeat;
+  //   min-width:65px;
+  //   height: 46px;
+  // }
 
-  &-delivery:before {
-    content: "";
-    background: url("/img/hero/icon-delivery.png") center center /contain no-repeat;
-    min-width:65px;
-    height: 46px;
+  // &-delivery:before {
+  //   content: "";
+  //   background: url("/img/hero/icon-delivery.png") center center /contain no-repeat;
+  //   min-width:65px;
+  //   height: 46px;
+  // }
+  // &-calorie:before {
+  //   content: "";
+  //   background: url("/img/hero/icon-calorie.png") center center /contain no-repeat;
+  //   min-width:65px;
+  //   height: 46px;
+  // }
+  
+
+}
+.icon__item {
+  display: flex;
+  max-width: 170px;
+  &-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.0625rem;
+    height: 2.8125rem;
+    margin-right: 0.625rem;
   }
-  &-calorie:before {
-    content: "";
-    background: url("/img/hero/icon-calorie.png") center center /contain no-repeat;
-    min-width:65px;
-    height: 46px;
-  }
+}
+.icon__item-pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.0625rem;
+  height: 2.8125rem;
 }

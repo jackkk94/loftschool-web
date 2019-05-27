@@ -19,6 +19,10 @@
     justify-content: space-between;
     padding-bottom: 50px;
     width: 54%; }
+  .hero__svg {
+    fill: #61c4d9;
+    stroke: #b0f7ff;
+    max-width: 100%; }
   .hero__title {
     text-transform: uppercase;
     font-size: 60px;
@@ -27,13 +31,13 @@
     padding: 5px 0px 5px 0px;
     margin-bottom: 12px;
     line-height: 60px;
-    width: 50%; }
+    max-width: 90%; }
   .hero__description {
     font-size: 21px;
     padding: 5px;
     margin-bottom: 10px;
     line-height: 1.1;
-    width: 38%; }
+    max-width: 75%; }
   .hero__container::after {
     content: "";
     width: 110%;
@@ -80,32 +84,43 @@
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.icon__item {
-  max-width: 170px; }
-
 .item__text {
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .item__text:before {
-    margin: 5px;
-    height: 43px; }
-  .item__text-natural:before {
-    content: "";
-    background: url("/img/hero/icon-natural.png") center center/contain no-repeat;
-    min-width: 65px;
-    height: 46px; }
-  .item__text-delivery:before {
-    content: "";
-    background: url("/img/hero/icon-delivery.png") center center/contain no-repeat;
-    min-width: 65px;
-    height: 46px; }
-  .item__text-calorie:before {
-    content: "";
-    background: url("/img/hero/icon-calorie.png") center center/contain no-repeat;
-    min-width: 65px;
-    height: 46px; }
+
+.icon__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 170px; }
+  .icon__item-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 4.0625rem;
+    height: 2.8125rem;
+    margin-right: 0.625rem; }
+
+.icon__item-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 4.0625rem;
+  height: 2.8125rem; }
 
 .header {
   display: -webkit-box;
@@ -259,7 +274,9 @@
     justify-content: center;
     padding: 25px; }
     .feature__pic-img {
-      max-width: 100%; }
+      max-width: 100%;
+      stroke: #0d0d0d;
+      fill: #f2f5f4; }
   .feature__name {
     font-size: 27px;
     font-weight: bold;
