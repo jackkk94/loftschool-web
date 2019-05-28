@@ -2,13 +2,18 @@
   background-color: rgb(248, 250, 249);
   &__container {
     
-    overflow: hidden;
-    max-width: 60rem!important;
+   
+    max-width:rem(940px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    width:95%;
 
+
+  }
+  &__wrapper{
+    overflow: hidden;
   }
   .section__title-slider {
     text-align: left;
@@ -37,7 +42,7 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    left: 0;
+    left: -2%;
   }
   .btn__arrow--next {
     width: 40px;
@@ -45,7 +50,7 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    right: 0;
+    right: -2%;
   }
   &__left {
     width: 50%;
