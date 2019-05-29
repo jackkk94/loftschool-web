@@ -7,7 +7,17 @@ $berrie: #cfdeda;
 $bg_grey: #f8faf9;
 $white: white;
 
+
+$tablets: 768px;
+$phones: 480px;
+
+
+
+
+
+
 @import "normalize.css";
+@import "_misc/media.scss";
 @import "blocks/hero.scss";
 @import "blocks/header.scss";
 @import "blocks/menu.scss";
@@ -29,8 +39,17 @@ $white: white;
 @import "blocks/slider.scss";
 @import "blocks/content.scss";
 
-body {
+
+html{
   font-size: 16px;
+  @include tablets{
+    font-size: 15px;
+  }
+  @include phones{
+    font-size: 14px;
+  }
+}
+body {
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -55,9 +74,9 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     font-family: "AlegreyaSansBold";
-    font-size: 48px;
+    font-size: rem(48px);
     text-align: center;
-    width: 430px;
+    width: rem(430px);
     margin: 0px;
     padding: 5px;
     line-height: 1;
@@ -66,7 +85,7 @@ body {
 }
 
 .container {
-  width: 940px;
+  width: rem(940px);
   position: relative;
   margin: 0 auto;
   display: flex;

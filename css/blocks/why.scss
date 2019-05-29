@@ -2,8 +2,8 @@
   &:before{
     content: "";
     background: url("/img/why/sheet.png") center center /contain no-repeat;
-    width:191px;
-    height: 314px;
+    width:rem(191px);
+    height: rem(314px);
     position:absolute;
     top:50%;
     transform: translateY(-50%);
@@ -11,8 +11,8 @@
   &:after{
     content: "";
     background: url("/img/why/strawberry.png") center center /contain no-repeat;
-    width:161px;
-    height: 315px;
+    width:rem(161px);
+    height: rem(315px);
     position:absolute;
     bottom:-5%;
   }
@@ -21,10 +21,10 @@
   align-items: center;
   &__text {
     text-align: center;
-    width: 430px;
+    width: rem(430px);
     margin: 0px;
     padding: 5px;
-    font-size: 18px;
+    font-size: rem(18px);
     width: inherit;
     color: $grey;
   }
@@ -34,7 +34,10 @@
     justify-content: center;
     align-items: center;
     padding-left: 0px;
-    margin-top: 37px;
+    margin-top: rem(37px);
+    @include tablets(){
+      flex-direction:column;
+    }
   }
   .container {
     justify-content: center;

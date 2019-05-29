@@ -4,11 +4,11 @@
     background: url(/img/team/right.png)   no-repeat ;
 
     display: block;
-    width: 196px;
+    width: rem(196px);
     position: absolute;
     top: -24%;
     right: 0px;
-    height:578px;
+    height:rem(578px);
     z-index: 2;
   }
   
@@ -16,11 +16,11 @@
     content: "";
     background: url(/img/team/strawberrie.png)   no-repeat ;
     display: block;
-    width: 135px;
+    width: rem(135px);
     position: absolute;
     bottom: -7%;
     left: 3%;
-    height:112px;
+    height:rem(112px);
     z-index: 3;
   }
   .section__title {
@@ -42,7 +42,7 @@
   }
   &__item {
     width: 24%;
-    min-width: 244px;
+    min-width: rem(244px);
     &:nth-child(2n) {
       padding-top: 6%;
     }
@@ -52,13 +52,13 @@
     width: 100%;
     &-author {
       font-family: AlegreyaSansMedium;
-      font-size: 21.98px;
+      font-size: rem(21.98px);
       &:after {
         content: "";
         background: url(/img/team/bottom.png) center center no-repeat;
         position: absolute;
-        min-height: 32px;
-        width: 9px;
+        min-height: rem(32px);
+        width: rem(9px);
         margin-left: 1%;
       }
       &:hover{
@@ -79,17 +79,17 @@
         content: "";
         background: url(/img/team/top.png) center center no-repeat;
         position: absolute;
-        min-height: 32px;
-        width: 9px;
+        min-height: rem(32px);
+        width: rem(9px);
         margin-left: 1%;
       }
     }
   }
   .item__position {
-    font-size: 18px;
+    font-size: rem(18px);
   }
   .item__text {
-    font-size: 17px;
+    font-size: rem(17px);
     color: $grey;
   }
   .item__pic {

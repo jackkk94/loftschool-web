@@ -5,27 +5,27 @@
   &__title {
     letter-spacing: 1px;
     font-family: AlegreyaSansMedium;
-    font-size: 27px;
+    font-size: rem(27px);
     color: $black;
     margin: 0px;
     font-weight: normal;
-    margin-bottom:22px;
+    margin-bottom:rem(22px);
     letter-spacing: 0.05em;
    
   }
   &__text {
-    font-size: 18px;
+    font-size: rem(18px);
     color: $grey;
-    line-height: 21px;
-    margin-bottom:30px;
+    line-height: 1;
+    margin-bottom:rem(30px);
   }
   &__author {
     font-family: AlegreyaSansMedium;
-    font-size: 18px;
+    font-size: rem(18px);
     color: $grey;
   }
   &__pic{
-    min-width:254px;
+    min-width:rem(254px);
     display: flex;
     justify-content: center;
     align-items: center;

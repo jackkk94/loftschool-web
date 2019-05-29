@@ -4,11 +4,11 @@
     background: url(/img/comment/left.png)   no-repeat ;
   
     display: block;
-    width: 158px;
+    width: rem(158px);
     position: absolute;
     bottom: -20%;
     left: 0px;
-    height:422px;
+    height:rem(422px);
     z-index: 2;
   }
   
@@ -16,11 +16,11 @@
     content: "";
     background: url(/img/comment/strawberry.png)   no-repeat ;
     display: block;
-    width: 173px;
+    width: rem(173px);
     position: absolute;
     top: 0%;
     right: 0px;
-    height:99px;
+    height:rem(99px);
   }
   .container{
     justify-content: center;
@@ -28,30 +28,30 @@
   &__header {
     text-align: left;
     font-weight: bold;
-    font-size: 48px;
+    font-size: rem(48px);
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    padding-left: 11px;
+    padding-left: rem(11px);
     position: relative;
     z-index: 6;
-    margin-bottom: 42px;
+    margin-bottom: rem(42px);
   }
   &__content {
     padding: 48px 160px 51px 49px;
     position: relative;
     text-align: left;
     background-color: $bg_grey;
-    min-height: 351px;
-    margin-bottom:23px;
+    min-height: rem(351px);
+    margin-bottom:rem(23px);
     &::before {
       content: "";
       display: block;
       position: absolute;
-      top: -61px;
-      right: 425px;
-      width: 90px;
-      height: 90px;
+      top: rem(-61px);
+      right: rem(425px);
+      width: rem(90px);
+      height: rem(90px);
       border-radius: 50%;
       background-color: $white;
     }
@@ -61,8 +61,8 @@
       right: 0px;
       position: absolute;
       background: url("/img/comment/berrie.png") center center no-repeat;
-      width: 129px;
-      height: 155px;
+      width: rem(129px);
+      height: rem(155px);
     }
   }
   &__main {

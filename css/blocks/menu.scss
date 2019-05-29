@@ -8,14 +8,17 @@
     
   }
   &__item{
-    margin-right:26px;
-    font-size: 18px;
+    margin-right:rem(26px);
+    font-size: rem(18px);
     &:last-child{
       margin:0;
     }
     &:first-child{
-      margin-left: 7px;
+      margin-left: rem(7px);
     }
+  }
+  @include tablets(){
+    display: none;
   }
 }
 .menu__list{

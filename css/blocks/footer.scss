@@ -16,17 +16,17 @@ width:50%;
     flex-direction: column;
     justify-content: center;
     &__address{
-      font-size: 21px;
+      font-size: rem(21px);
     }
     &__phone{
       display: flex;
       align-items: center;
-      font-size: 21px;
+      font-size: rem(21px);
       color: $green;
       &:before{
         content:"";
-        width:12px;
-        height:11px;
+        width:rem(12px);
+        height:rem(11px);
         display: block;
         background: url(/img/contacts/phone.png)   no-repeat ;
         margin-right: 9px;
