@@ -1424,6 +1424,9 @@ body {
     padding: 5px;
     line-height: 1;
     width: 100%; }
+  @media screen and (max-width: 480px) {
+    .section {
+      min-width: 460px; } }
 
 .container {
   width: 58.75rem;

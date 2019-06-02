@@ -83,6 +83,9 @@ body {
     line-height: 1;
     width: 100%;
   }
+  @include phones{
+    min-width: 460px;
+  }
 }
 
 .container {
