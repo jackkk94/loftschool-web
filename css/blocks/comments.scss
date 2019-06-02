@@ -24,6 +24,9 @@
   }
   .container{
     justify-content: center;
+    @include tablets {
+      align-items: center;
+    }
   }
   &__header {
     text-align: left;
@@ -44,6 +47,14 @@
     background-color: $bg_grey;
     min-height: rem(351px);
     margin-bottom:rem(23px);
+    @include tablets {
+      width:rem(530px);
+      padding: 60px 35px 40px 35px;
+    }
+    @include phones {
+      width:rem(510px);
+      
+    }
     &::before {
       content: "";
       display: block;
@@ -63,11 +74,17 @@
       background: url("/img/comment/berrie.png") center center no-repeat;
       width: rem(129px);
       height: rem(155px);
+      @include phones {
+        background-size: 70% auto
+      }
     }
   }
   &__main {
     display: flex;
     flex-direction: row;
+    @include tablets {
+      flex-direction: column;
+    }
   }
   &__users {
     display: flex;

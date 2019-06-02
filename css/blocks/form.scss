@@ -6,20 +6,43 @@
   font-family: "OpenSans";
   flex-direction: row;
   justify-content: space-between;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
   &__column {
     display: flex;
     flex-direction: column;
     width: 49%;
+    @include tablets {
+      width:69%;
+    }
+    @include phones {
+      width:100%;
+    }
   }
   &__row {
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(8px);
+    &-checkbox{
+      @include tablets {
+        justify-content: center;
+      }
+    }
+    &-buttons{
+      @include tablets {
+        justify-content: center;
+      }
+    }
   }
   &__content {
     width: 100%;
     &-textarea{
       margin-bottom:rem(7px);
+      @include tablets {
+        margin-bottom:rem(55px)
+      }
     }
 
     &--half {
@@ -60,6 +83,7 @@
     &:checked + &-fake:after {
       opacity: 1;
     }
+
     &-container {
       display: flex;
       margin-right:10px;
@@ -115,9 +139,16 @@
   }
   .form__row-radio{
     justify-content: flex-start;
+    @include tablets {
+      justify-content: center;
+      margin-bottom: rem(25px);
+    }
   }
   &__buttons{
     margin-top:rem(23px);
+    @include tablets {
+      margin-top:rem(55px);
+    }
   }
   &__button--hover{
     background-color:$green;
@@ -128,6 +159,7 @@
     font-weight: normal;
     font-family: "AlegreyaSans";
   }
+
 }
 
 .delivery {

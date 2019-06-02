@@ -4,6 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablets(){
+    width:39%;
+  }
+  @include phones(){
+    width:63%;
+  }
   &__pic {
     background-color: $bggrey;
     border-radius: 50%;
@@ -18,7 +24,7 @@
       stroke:#0d0d0d;
       fill:#f2f5f4;
     }
-   
+
   }
   &__name {
     font-size: rem(27px);

@@ -18,7 +18,7 @@
     display: block;
     width: rem(135px);
     position: absolute;
-    bottom: -7%;
+    bottom: -3%;
     left: 3%;
     height:rem(112px);
     z-index: 3;
@@ -39,13 +39,25 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    @include tablets {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include phones {
+      justify-content: space-between;
+    }
   }
   &__item {
     width: 24%;
     min-width: rem(244px);
     &:nth-child(2n) {
       padding-top: 6%;
+      @include tablets {
+        padding-top:0;
+      }
+      
     }
+
   }
 
   .item__content {
@@ -91,6 +103,9 @@
   .item__text {
     font-size: rem(17px);
     color: $grey;
+    @include tablets {
+      max-width: 100%;
+    }
   }
   .item__pic {
     width: 100%;

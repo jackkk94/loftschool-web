@@ -38,6 +38,7 @@ $phones: 480px;
 @import "blocks/menu1.scss";
 @import "blocks/slider.scss";
 @import "blocks/content.scss";
+@import "blocks/burger.scss";
 
 
 html{
@@ -61,7 +62,7 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px + 20px;
+  // min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }
@@ -91,6 +92,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  @include tablets{
+    width:90%;
+  }
+  @include phones{
+    width:95%;
+  }
 }
 
 

@@ -7,6 +7,9 @@
     position:absolute;
     top:50%;
     transform: translateY(-50%);
+    @include phones(){
+      top:30%;
+    }
   }
   &:after{
     content: "";
@@ -15,6 +18,7 @@
     height: rem(315px);
     position:absolute;
     bottom:-5%;
+    z-index: 10;
   }
 
 

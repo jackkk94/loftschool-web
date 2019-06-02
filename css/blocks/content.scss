@@ -26,6 +26,9 @@
         color: $grey;
         line-height: 1.2;
         text-align: left;
+        @include tablets {
+          text-align: center;
+         }
       }
       @include tablets {
        text-align: center;

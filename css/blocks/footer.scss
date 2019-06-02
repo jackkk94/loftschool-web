@@ -1,40 +1,61 @@
-.footer{
+.footer {
   position: absolute;
   background: $white;
-  bottom:0;
+  bottom: 0;
   display: flex;
   align-items: center;
-  min-height: 10%;
-  &__contacts{
-width:50%;
+  min-height: 15%;
+  &__contacts {
+    width: 50%;
+    @include phones {
+      width: 100%;
+    }
   }
-  &__socials{
-    width:50%;
+  &__socials {
+    width: 50%;
+    @include phones {
+      width: 100%;
+    }
   }
-  .contact{
+
+  .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &__address{
+    &__address {
       font-size: rem(21px);
+      @include phones {
+        margin-bottom:rem(10px);
+      }
     }
-    &__phone{
+    @include phones {
+      align-items: center;
+    }
+    &__phone {
       display: flex;
       align-items: center;
       font-size: rem(21px);
       color: $green;
-      &:before{
-        content:"";
-        width:rem(12px);
-        height:rem(11px);
+      @include phones {
+        margin-bottom:rem(10px);
+      }
+      &:before {
+        content: "";
+        width: rem(12px);
+        height: rem(11px);
         display: block;
-        background: url(/img/contacts/phone.png)   no-repeat ;
+        background: url(/img/contacts/phone.png) no-repeat;
         margin-right: 9px;
       }
     }
   }
-  &__container{
+  &__container {
     display: flex;
-    flex-direction: row!important;
+    flex-direction: row !important;
+    @include phones {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center;
+    }
   }
 }

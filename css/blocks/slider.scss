@@ -7,6 +7,12 @@
     justify-content: center;
     flex-direction: row;
     width: 95%;
+    @include tablets {
+      width: 54%!important;
+    }
+    @include phones {
+      width: 91%!important;
+    }
   }
   &__wrapper {
     overflow: hidden;
@@ -36,6 +42,9 @@
     @include tablets {
       flex-direction: column;
     }
+    @include phones {
+      align-items: center;
+    }
   }
   .btn__arrow--prev {
     width: rem(40px);
@@ -44,6 +53,9 @@
     position: absolute;
     z-index: 2;
     left: -2%;
+    @include tablets {
+      top:35%;
+    }
   }
   .btn__arrow--next {
     width: rem(40px);
@@ -52,6 +64,14 @@
     position: absolute;
     z-index: 2;
     right: -2%;
+    @include tablets {
+      top:35%;
+      right: -13%;
+    }
+    @include phones {
+      top:35%;
+      right: -3%;
+    }
   }
   &__left {
     width: 50%;
@@ -60,6 +80,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    @include phones {
+      width:85%;
     }
   }
   &__right {
@@ -73,6 +96,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    @include phones {
+      width:95%;
     }
   }
   &__image {
