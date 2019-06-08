@@ -43,10 +43,12 @@ sendButton.addEventListener("click", function (e) {
     var message = generateData(document.forms[0].elements);
     console.log(message);
     var req = new XMLHttpRequest();
+    req.responseType = 'json';
     req.open("POST", "https://webdev-api.loftschool.com/sendmail");
     req.onload = function () {
-        console.log(req.responseText);
+        console.log(req.response);
     }
+    req.setRequestHeader("X-Requested-With", "XMLHttpRequest")
     req.send(message);
 });
 
@@ -61,6 +63,6 @@ function generateData(value) {
     data.append("name", form["name"].value);
     data.append("phone", form["phone"].value);
     data.append("comment", form["comment"].value);
-    data.append("to", "https://webdev-api.loftschool.com/sendmail")
+    data.append("to", "jackpanchenko@mail.ru")
     return data;
 }
