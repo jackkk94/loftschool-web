@@ -17,6 +17,7 @@
     justify-content: space-between;
     padding-bottom: rem(50px);
     width: 54%;
+    z-index: 8;
 
     @include tablets() {
       align-items: center;

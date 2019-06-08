@@ -18,7 +18,7 @@
     max-width: 73%;
     position: absolute;
     right: 0;
-    @include phones {
+    @include tablets {
       max-width: 100%;
     }
   }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
 
@@ -21,7 +22,7 @@
                   CCO
               </h2>
         </div>
-          <nav class="menu">
+          <nav class="menu  animated fadeIn" id="chocolateMenu">
               <ul class="menu__list">
                 <li class="menu__item">
                   <a class="menu__link" href="">О нас </a>
@@ -49,10 +50,15 @@
             <div class="phone">
                 <a class="phone__link" href="tel:88009039090">8 800 903 90 90</a>
             </div>
-            <div class="menu-burger-link burger">
+            <!-- <div class="menu-burger-link burger">
               <div class="burger__item"></div>  
               <div class="burger__item"></div>  
               <div class="burger__item"></div>  
+            </div> -->
+            <div class="menu-burger-link hamburger hamburger--squeeze" id="chocolateMenuButton">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
             </div>
       </header>
       <div class="hero__content">
@@ -359,11 +365,11 @@
               <div class="form__row">
                 <label  class="form__content  form__content--half">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="name">
                 </label>
                 <label  class="form__content  form__content--half">
                     <div class="form__title">Телефон</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="phone">
                 </label>
               </div>
               <div class="form__row">
@@ -391,7 +397,7 @@
                 <div class="form__row">
                     <label  class="form__content form__content-textarea">
                         <div class="form__title">Комментарий</div>
-                        <textarea name="" id="" cols="30" rows="7" class="form__textarea"></textarea>
+                        <textarea name="comment" id="" cols="30" rows="7" class="form__textarea" ></textarea>
                     </label>
                     </div>
                     <div class="form__row form__row-radio">
@@ -418,8 +424,8 @@
                     </div> 
                     <div class="form__row form__row-buttons">
                       <div class="form__buttons">
-                        <button type="submit" class="form__submit btn form__button--hover">Заказать</button>
-                        <button type="reset" class="form__reset btn form__button-cancel">Очистить</button>
+                        <button type="button" class="form__submit btn form__button--hover" id="sendForm">Заказать</button>
+                        <button type="reset" class="form__reset btn form__button-cancel" id="clearForm">Очистить</button>
                       </div>
                     </div>
             </div>
@@ -449,5 +455,6 @@
   </section>
 
 </div>
+<script src="/js/script.js"></script>
   </body>
 </html>
