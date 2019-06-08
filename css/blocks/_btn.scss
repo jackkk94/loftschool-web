@@ -10,4 +10,8 @@
   color:#006633;
   display: inline-block;
   margin-bottom: rem(10px);
+  outline: none;
+  &:hover{
+    cursor: pointer;
+  }
 }

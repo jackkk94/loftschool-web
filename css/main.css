@@ -338,7 +338,10 @@
   border-radius: 3.125rem;
   color: #006633;
   display: inline-block;
-  margin-bottom: 0.625rem; }
+  margin-bottom: 0.625rem;
+  outline: none; }
+  .btn:hover {
+    cursor: pointer; }
 
 .why {
   -webkit-box-align: center;
@@ -1116,6 +1119,49 @@
     background: none;
     font-weight: normal;
     font-family: "AlegreyaSans"; }
+  .form__modal {
+    width: 300px;
+    height: 174px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 10;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .form__modal .modal__text {
+      padding-bottom: 20px;
+      font-weight: bold; }
+    .form__modal-container {
+      background: #0d0d0df5;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      z-index: 100;
+      display: none; }
+      .form__modal-container--active {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
 
 .delivery {
   background: url("/img/delivery/bg.png") center center/cover no-repeat; }

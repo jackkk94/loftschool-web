@@ -3,6 +3,9 @@ var menuButton = document.querySelector('#chocolateMenuButton');
 
 var sendButton = document.querySelector('#sendForm');
 var clearButton = document.querySelector('#clearForm');
+var formModal = document.querySelector('.form__modal-container');
+var sendResultContainer = document.querySelector('.modal__text');
+var closeModal = document.querySelector('#closeForm');
 
 var commentsControls = document.querySelectorAll(".comments__avatar");
 var comments = document.querySelectorAll(".comment");
@@ -89,7 +92,13 @@ sendButton.addEventListener("click", function (e) {
     req.responseType = 'json';
     req.open("POST", "https://webdev-api.loftschool.com/sendmail");
     req.onload = function () {
-        console.log(req.response.message);
+        
+        sendResultContainer.textContent=req.response.message
+        closeModal.addEventListener("click",(e)=>{
+            e.preventDefault();
+            formModal.classList.remove("form__modal-container--active");
+        })
+        formModal.classList.add("form__modal-container--active");
     }
     req.setRequestHeader("X-Requested-With", "XMLHttpRequest")
     req.send(message);

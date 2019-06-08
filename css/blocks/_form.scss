@@ -15,22 +15,22 @@
     flex-direction: column;
     width: 49%;
     @include tablets {
-      width:69%;
+      width: 69%;
     }
     @include phones {
-      width:100%;
+      width: 100%;
     }
   }
   &__row {
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(8px);
-    &-checkbox{
+    &-checkbox {
       @include tablets {
         justify-content: center;
       }
     }
-    &-buttons{
+    &-buttons {
       @include tablets {
         justify-content: center;
       }
@@ -38,13 +38,13 @@
   }
   &__content {
     width: 100%;
-    &-textarea{
-      margin-bottom:rem(7px);
+    &-textarea {
+      margin-bottom: rem(7px);
       @include tablets {
-        margin-bottom:rem(55px)
+        margin-bottom: rem(55px);
       }
       @include phones {
-        margin-bottom:rem(5px)
+        margin-bottom: rem(5px);
       }
     }
 
@@ -89,11 +89,11 @@
 
     &-container {
       display: flex;
-      margin-right:10px;
+      margin-right: 10px;
     }
   }
   &__checkbox {
-    &-container{
+    &-container {
       display: flex;
     }
     appearance: none;
@@ -140,37 +140,67 @@
       transition: opacity 0.3s ease-out;
     }
   }
-  .form__row-radio{
+  .form__row-radio {
     justify-content: flex-start;
     @include tablets {
       justify-content: center;
       margin-bottom: rem(25px);
     }
   }
-  &__buttons{
-    margin-top:rem(23px);
+  &__buttons {
+    margin-top: rem(23px);
     @include tablets {
-      margin-top:rem(55px);
+      margin-top: rem(55px);
     }
     @include phones {
-      margin-top:rem(10px);
+      margin-top: rem(10px);
     }
   }
-  &__button--hover{
-    background-color:$green;
-    color:$white;
+  &__button--hover {
+    background-color: $green;
+    color: $white;
   }
-  &__button-cancel{
+  &__button-cancel {
     background: none;
     font-weight: normal;
     font-family: "AlegreyaSans";
   }
 
+  &__modal {
+    width: 300px;
+    height: 174px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background: $white;
+    display: flex;
+    .modal__text {
+      padding-bottom: 20px;
+      font-weight: bold;
+    }
+    &-container{
+      background: #0d0d0df5;
+      display: flex;
+      position:fixed;
+      top:0;
+      left: 0;
+      height: 100%;
+      width:100%;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      display: none;
+      &--active{
+        display: flex;
+      }
+    }
+  }
 }
 
 .delivery {
   background: url("/img/delivery/bg.png") center center / cover no-repeat;
-  &-container{
+  &-container {
     display: flex;
 
     justify-content: center;
@@ -178,10 +208,8 @@
 }
 
 .section__title-form {
-  
   color: $green;
   @include phones {
-    font-size:rem(32px)!important
+    font-size: rem(32px) !important;
   }
- 
 }
