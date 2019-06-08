@@ -84,6 +84,12 @@ menu.addEventListener("click", function (e) {
 });
 
 
+clearButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    for(let i=0;i<document.forms[0].elements.length;i++){
+        document.forms[0].elements[i].value="";
+    }
+})
 
 sendButton.addEventListener("click", function (e) {
     e.preventDefault();
@@ -92,7 +98,7 @@ sendButton.addEventListener("click", function (e) {
     req.responseType = 'json';
     req.open("POST", "https://webdev-api.loftschool.com/sendmail");
     req.onload = function () {
-        
+    
         sendResultContainer.textContent=req.response.message
         closeModal.addEventListener("click",(e)=>{
             e.preventDefault();
