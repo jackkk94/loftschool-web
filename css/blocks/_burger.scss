@@ -18,7 +18,7 @@
 //   }
 // }
 .hamburger {
-  display: none;
+  display: none!important;
   z-index: 101;
   padding: 15px 15px;
   display: inline-block;
@@ -34,7 +34,7 @@
   margin: 0;
   overflow: visible;
   @include tablets() {
-    display: flex;
+    display: flex!important;
   }
 }
 .hamburger:hover {

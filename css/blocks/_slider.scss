@@ -12,6 +12,14 @@
   }
   &__wrapper {
     overflow: hidden;
+    @include tablets {
+      
+      width:60%;
+    }
+    @include phones {
+      
+      width:90%;
+    }
   }
   .section__title-slider {
     text-align: left;
@@ -30,6 +38,7 @@
     align-items: center;
     transition: right 0.3s;
     justify-content: center;
+
   }
   &__item {
     display: flex;
@@ -39,11 +48,11 @@
     flex-shrink: 0;
     @include tablets {
       flex-direction: column;
-      width:60%;
+     
     }
     @include phones {
       align-items: center;
-      width:90%;
+   
     }
   }
   .btn__arrow--prev {
