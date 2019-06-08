@@ -1,7 +1,7 @@
 .comments {
   &:before{
     content: "";
-    background: url(/img/comment/left.png)   no-repeat ;
+    background: url(/img/comment/left.png)left center /contain   no-repeat ;
   
     display: block;
     width: rem(158px);
@@ -10,17 +10,24 @@
     left: 0px;
     height:rem(422px);
     z-index: 2;
+    @include phones {
+      width: rem(88px);
+      z-index: 1;
+    }
   }
   
   &:after{
     content: "";
-    background: url(/img/comment/strawberry.png)   no-repeat ;
+    background: url(/img/comment/strawberry.png) right center / contain   no-repeat ;
     display: block;
     width: rem(173px);
     position: absolute;
     top: 0%;
     right: 0px;
     height:rem(99px);
+    @include tablets {
+      width: rem(133px);
+    }
   }
   .container{
     justify-content: center;
@@ -60,11 +67,16 @@
       display: block;
       position: absolute;
       top: rem(-61px);
-      right: rem(425px);
+      left:50%;
+      transform:translateX(-50%);
       width: rem(90px);
       height: rem(90px);
       border-radius: 50%;
       background-color: $white;
+      // @include tablets {
+      //   left: rem(225px);
+      // }
+
     }
     &::after {
       content: "";

@@ -1,4 +1,9 @@
+
 .why {
+  .section__title{
+    padding: 0;
+    font-size: rem(40px);
+  }
   &:before{
     content: "";
     background: url("/img/why/sheet.png") center center /contain no-repeat;
@@ -13,9 +18,9 @@
   }
   &:after{
     content: "";
-    background: url("/img/why/strawberry.png") center center /contain no-repeat;
-    width:rem(161px);
-    height: rem(315px);
+    background: url("/img/why/strawberry.png") left center /contain no-repeat;
+    width:rem(81px);
+    height: rem(185px);
     position:absolute;
     bottom:-5%;
     z-index: 10;
@@ -27,7 +32,7 @@
     text-align: center;
     width: rem(430px);
     margin: 0px;
-    padding: 5px;
+   
     font-size: rem(18px);
     width: inherit;
     color: $grey;

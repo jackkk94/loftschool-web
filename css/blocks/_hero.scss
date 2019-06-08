@@ -53,17 +53,18 @@
     font-size: rem(60px);
     letter-spacing: 0.028em;
     font-weight: bold;
-    padding: 5px 0px 5px 0px;
+    
     margin-bottom: rem(12px);
     line-height: 1;
     max-width: 90%;
     @include phones {
       margin-bottom: 0;
+      font-size: rem(56px);
     }
   }
   &__description {
-    font-size: 21px;
-    padding: 5px;
+    font-size: rem(21px);
+    
     margin-bottom: rem(10px);
     line-height: 1.1;
     max-width: 75%;
@@ -108,12 +109,13 @@
     align-items: center;
     .image {
       max-width: 100%;
+
       &--tablet {
         display: none;
         @include tablets() {
           display: flex;
           position: absolute;
-          top: rem(224px);
+          top: rem(130px);
         }
       }
     }
@@ -121,12 +123,11 @@
       align-items: flex-start;
       right: auto;
       top: 4rem;
-      width: 100%;
-    }
-    @include tablets() {
+      width: 81%;
       top: 2rem;
-      width: 91%;
+      height: 44%;
     }
+  
 
     .berries {
       z-index: 3;
@@ -162,7 +163,7 @@
   }
   @include tablets() {
     max-width: rem(230px);
-    margin-right: rem(30px);
+    
     .icon__item:last-child {
       margin: 0;
     }

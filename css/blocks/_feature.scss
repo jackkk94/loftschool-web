@@ -1,5 +1,5 @@
 .feature {
-  padding: 5px;
+  
   width:33%;
   display: flex;
   flex-direction: column;
@@ -8,17 +8,17 @@
     width:39%;
   }
   @include phones(){
-    width:63%;
+    width:80%;
   }
   &__pic {
     background-color: $bggrey;
     border-radius: 50%;
-    width: rem(125px);
-    height: rem(125px);
+    width: rem(95px);
+    height: rem(95px);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:rem(25px);
+    padding:rem(15px);
     &-img {
       max-width: 100%;
       stroke:#0d0d0d;
@@ -29,12 +29,12 @@
   &__name {
     font-size: rem(27px);
     font-weight: bold;
-    margin-top:rem(29px);
+    margin-top:rem(12px);
   }
   &__text {
     text-align: center;
     margin: 0px;
-    padding: 5px;
+ 
     font-size: rem(18px);
     color:$grey;
     margin-top:rem(10px);

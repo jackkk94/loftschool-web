@@ -7,12 +7,8 @@
     justify-content: center;
     flex-direction: row;
     width: 95%;
-    @include tablets {
-      width: 54%!important;
-    }
-    @include phones {
-      width: 91%!important;
-    }
+    
+
   }
   &__wrapper {
     overflow: hidden;
@@ -26,12 +22,14 @@
       text-align: center;
     }
   }
+
   &__list {
     display: flex;
     width: 100%;
     position: relative;
     align-items: center;
     transition: right 0.3s;
+    justify-content: center;
   }
   &__item {
     display: flex;
@@ -41,9 +39,11 @@
     flex-shrink: 0;
     @include tablets {
       flex-direction: column;
+      width:60%;
     }
     @include phones {
       align-items: center;
+      width:90%;
     }
   }
   .btn__arrow--prev {
@@ -52,7 +52,7 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    left: -2%;
+    left: 0;
     @include tablets {
       top:35%;
     }
@@ -63,14 +63,14 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    right: -2%;
+    right: 0%;
     @include tablets {
       top:35%;
-      right: -13%;
+    
     }
     @include phones {
       top:35%;
-      right: -3%;
+
     }
   }
   &__left {
@@ -96,9 +96,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding:0;
     }
     @include phones {
       width:95%;
+      
     }
   }
   &__image {

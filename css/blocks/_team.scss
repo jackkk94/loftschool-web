@@ -1,8 +1,7 @@
 .team {
   &:before{
     content: "";
-    background: url(/img/team/right.png)   no-repeat ;
-
+    background: url(/img/team/right.png) right center / contain  no-repeat ;
     display: block;
     width: rem(196px);
     position: absolute;
@@ -10,11 +9,15 @@
     right: 0px;
     height:rem(578px);
     z-index: 2;
+    @include phones {
+      width: rem(106px);
+      z-index: 0;
+    }
   }
   
   &:after{
     content: "";
-    background: url(/img/team/strawberrie.png)   no-repeat ;
+    background: url(/img/team/strawberrie.png)left center / contain   no-repeat ;
     display: block;
     width: rem(135px);
     position: absolute;
@@ -22,19 +25,25 @@
     left: 3%;
     height:rem(112px);
     z-index: 3;
+    @include phones {
+      width: rem(56px);
+      height:rem(82px);
+    }
   }
   .section__title {
-    margin-top: auto;
+  
     margin-bottom: 7%;
   }
   &__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items:center;
   }
   &__list {
     flex: 0.85;
     text-align: center;
+    margin-left:-15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,8 +57,10 @@
     }
   }
   &__item {
-    width: 24%;
+    width: 32%;
     min-width: rem(244px);
+    
+    margin-left: 15px;
     &:nth-child(2n) {
       padding-top: 6%;
       @include tablets {
@@ -57,12 +68,16 @@
       }
       
     }
-
+    @include phones {
+      min-width:auto;
+      width:45%;
+    }
   }
 
   .item__content {
     width: 100%;
     &-author {
+      
       font-family: AlegreyaSansMedium;
       font-size: rem(21.98px);
       &:after {
@@ -75,6 +90,9 @@
       }
       &:hover{
         cursor: pointer;
+      }
+      &:visited{
+        color:$black;
       }
     }
     &-comment {

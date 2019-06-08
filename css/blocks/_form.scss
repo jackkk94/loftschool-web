@@ -43,6 +43,9 @@
       @include tablets {
         margin-bottom:rem(55px)
       }
+      @include phones {
+        margin-bottom:rem(5px)
+      }
     }
 
     &--half {
@@ -149,6 +152,9 @@
     @include tablets {
       margin-top:rem(55px);
     }
+    @include phones {
+      margin-top:rem(10px);
+    }
   }
   &__button--hover{
     background-color:$green;
@@ -174,5 +180,8 @@
 .section__title-form {
   
   color: $green;
-  margin-bottom:6%!important;
+  @include phones {
+    font-size:rem(32px)!important
+  }
+ 
 }
