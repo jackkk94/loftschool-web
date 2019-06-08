@@ -102,8 +102,10 @@
     }
 
     &--active {
+      transition: height 1s ease;
       & .item__content-comment:last-child {
         height: auto;
+        
       }
       & .item__content-author:after {
         content: "";

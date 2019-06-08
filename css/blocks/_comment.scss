@@ -1,5 +1,9 @@
 .comment {
   align-items: center;
+  display: none;
+  &--active{
+    display: flex;
+  }
   &__desc {
     padding: 10px 20px 20px 20px;
     @include tablets {

@@ -52,9 +52,10 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    left: 0;
+    left: -2%;
     @include tablets {
       top:35%;
+      left: 0;
     }
   }
   .btn__arrow--next {
@@ -63,10 +64,10 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    right: 0%;
+    right: -3%;
     @include tablets {
       top:35%;
-    
+      right: 0%;
     }
     @include phones {
       top:35%;

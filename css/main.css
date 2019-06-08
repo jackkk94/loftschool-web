@@ -586,7 +586,12 @@
 .comment {
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  display: none; }
+  .comment--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .comment__desc {
     padding: 10px 20px 20px 20px; }
     @media screen and (max-width: 769px) {
@@ -652,7 +657,7 @@
   border: 8px solid transparent; }
   .user__avatar {
     max-width: 105%; }
-  .user-hover {
+  .user--active {
     border: 8px solid #0f5a47; }
   .user:last-child {
     margin-right: 0px; }
@@ -770,15 +775,19 @@
     -webkit-transition: height 1s ease;
     -o-transition: height 1s ease;
     transition: height 1s ease; }
-  .team .item__content--active .item__content-comment:last-child {
-    height: auto; }
-  .team .item__content--active .item__content-author:after {
-    content: "";
-    background: url(/img/team/top.png) center center no-repeat;
-    position: absolute;
-    min-height: 2rem;
-    width: 0.5625rem;
-    margin-left: 1%; }
+  .team .item__content--active {
+    -webkit-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease; }
+    .team .item__content--active .item__content-comment:last-child {
+      height: auto; }
+    .team .item__content--active .item__content-author:after {
+      content: "";
+      background: url(/img/team/top.png) center center no-repeat;
+      position: absolute;
+      min-height: 2rem;
+      width: 0.5625rem;
+      margin-left: 1%; }
 
 .team .item__position {
   font-size: 1.125rem; }
@@ -1293,10 +1302,11 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    left: 0; }
+    left: -2%; }
     @media screen and (max-width: 769px) {
       .slider .btn__arrow--prev {
-        top: 35%; } }
+        top: 35%;
+        left: 0; } }
   .slider .btn__arrow--next {
     width: 2.5rem;
     -webkit-box-pack: end;
@@ -1307,10 +1317,11 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    right: 0%; }
+    right: -3%; }
     @media screen and (max-width: 769px) {
       .slider .btn__arrow--next {
-        top: 35%; } }
+        top: 35%;
+        right: 0%; } }
     @media screen and (max-width: 480px) {
       .slider .btn__arrow--next {
         top: 35%; } }

@@ -182,10 +182,10 @@
               <img src="/img/slider/left.png" class="slider__arrow" alt="">
           </a>
           <div class="slider__wrapper">
-        <ul class="slider__list">
+        <ul class="slider__list" id="slider">
           <li class="slider__item">
             <div class="slider__left">
-              <img src="/img/slider/tovar-1.png" alt="" class="slider__image">
+              <img src="/img/slider/tovar-2.png" alt="" class="slider__image">
             </div>
             <div class="slider__right">
                 <h3 class="section__title section__title-slider">
@@ -223,6 +223,89 @@
    
               
             </li>
+            <li class="slider__item ">
+              <div class="slider__left">
+                <img src="/img/slider/tovar-1.png" alt="" class="slider__image">
+              </div>
+              <div class="slider__right">
+                  <h3 class="section__title section__title-slider">
+                    Батончик  “Гранола виноград”
+                    </h3>
+                    <div class="slider__content content">
+                        <div class="content__composition"><h4 class="content__composition-title">  Состав</h4>
+                            <p class="content__composition-text">
+                              Гранола из винограда, грецкого ореха и кунжутных 
+                              семечек. В состав также входят: сухое молоко, 
+                              заменитель сахара и какао бобы. 
+                              
+                            </p>
+                        </div>
+                       <div class="content__info">
+                        <div class="content__calorie"><h4 class="content__composition-calorie">Калорийность</h4>
+                          <p class="content__calorie-text">110 ккал</p>
+                          
+                        </div>
+                      
+                        <div class="content__weight"><h4 class="content__composition-weight">Вес</h4>
+                          <p class="content__weight-text">        95 грамм</p>
+                        </div>
+                      </div>
+  
+                        <div class="content__order">
+                            <div class="content__order-price"> 140 Р </div>
+                            <button type="button" class="btn content__order-btn">Заказать</button>
+                        </div>
+                        
+            
+                        
+          
+          
+                    </div>
+              </div>
+     
+                
+              </li>
+              <li class="slider__item">
+                <div class="slider__left">
+                  <img src="/img/slider/tovar-1.png" alt="" class="slider__image">
+                </div>
+                <div class="slider__right">
+                    <h3 class="section__title section__title-slider">
+                        Батончик "Морские водоросли"
+                      </h3>
+                      <div class="slider__content content">
+                          <div class="content__composition"><h4 class="content__composition-title">  Состав</h4>
+                              <p class="content__composition-text">
+                                  Гранола из морских водорослей с овсом, миндалем и 
+                                  тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы
+                              </p>
+                          </div>
+                         <div class="content__info">
+                          <div class="content__calorie"><h4 class="content__composition-calorie">Калорийность</h4>
+                            <p class="content__calorie-text">120 ккал</p>
+                            
+                          </div>
+                        
+                          <div class="content__weight"><h4 class="content__composition-weight">Вес</h4>
+                            <p class="content__weight-text">        98 грамм</p>
+                          </div>
+                        </div>
+    
+                          <div class="content__order">
+                              <div class="content__order-price"> 140 Р </div>
+                              <button type="button" class="btn content__order-btn">Заказать</button>
+                          </div>
+                          
+              
+                          
+            
+            
+                      </div>
+                </div>
+       
+                  
+                </li>
+                
         </ul>
       </div>
         <a href="" class="btn__arrow--next">
@@ -319,7 +402,7 @@
     <div class="container">
       <h3 class="comments__header">Отзывы</h3>
       <ul class="comments__content">
-        <li class="comments__main comment">
+        <li class="comments__main comment comment--active">
           <div class="comment__pic">
             <img src="/img/comment/anya_hmelnitskaya.png" alt="" class="comment__pic-img">
           </div>
@@ -339,9 +422,49 @@
             </div>
           </div>
         </li>
+        <li class="comments__main comment">
+          <div class="comment__pic">
+            <img src="/img/comment/mariya_orlova.png" alt="" class="comment__pic-img">
+          </div>
+          <div class="comment__desc">
+            <h4 class="comment__title">
+              Лучший перекус
+            </h4>
+            <div class="comment__text">
+              Я ем малыми порциями, но часто. Это повышает мою
+              продуктивность в разы. В течение дня сижу за компьютером и
+              часто отходить в кафе или на кухню просто не могу себе
+              позволить. А батончик – он всегда под рукой. Это приятно и
+              удобно.
+            </div>
+            <div class="comment__author">
+              Мария Орлова
+            </div>
+          </div>
+        </li>
+        <li class="comments__main comment">
+          <div class="comment__pic">
+            <img src="/img/comment/vadim_grachev.png" alt="" class="comment__pic-img">
+          </div>
+          <div class="comment__desc">
+            <h4 class="comment__title">
+              Лучший перекус
+            </h4>
+            <div class="comment__text">
+              Я ем малыми порциями, но часто. Это повышает мою
+              продуктивность в разы. В течение дня сижу за компьютером и
+              часто отходить в кафе или на кухню просто не могу себе
+              позволить. А батончик – он всегда под рукой. Это приятно и
+              удобно.
+            </div>
+            <div class="comment__author">
+              Вадим Грачев
+            </div>
+          </div>
+        </li>
       </ul>
       <ul class="comments__users">
-        <li class="comments__avatar user user-hover">
+        <li class="comments__avatar user user--active">
             <a class="comments__users-link" href="#"><img src="/img/comment/anya_hmelnitskaya.png" alt="" class="user__avatar">
         </a></li>
         <li class="comments__avatar user">
