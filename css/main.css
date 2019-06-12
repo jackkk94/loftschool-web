@@ -775,22 +775,18 @@
   .team .item__content-comment {
     height: 0;
     overflow: hidden;
-    -webkit-transition: height 1s ease;
-    -o-transition: height 1s ease;
-    transition: height 1s ease; }
-  .team .item__content--active {
-    -webkit-transition: height 1s ease;
-    -o-transition: height 1s ease;
-    transition: height 1s ease; }
-    .team .item__content--active .item__content-comment:last-child {
-      height: auto; }
-    .team .item__content--active .item__content-author:after {
-      content: "";
-      background: url(/img/team/top.png) center center no-repeat;
-      position: absolute;
-      min-height: 2rem;
-      width: 0.5625rem;
-      margin-left: 1%; }
+    -webkit-transition: height .3s ease;
+    -o-transition: height .3s ease;
+    transition: height .3s ease; }
+  .team .item__content--active .item__content-comment:last-child {
+    height: 80px; }
+  .team .item__content--active .item__content-author:after {
+    content: "";
+    background: url(/img/team/top.png) center center no-repeat;
+    position: absolute;
+    min-height: 2rem;
+    width: 0.5625rem;
+    margin-left: 1%; }
 
 .team .item__position {
   font-size: 1.125rem; }
@@ -1222,7 +1218,13 @@
     .menu1__item:hover {
       cursor: pointer; }
     .menu1__item--active .menu1__content {
-      width: 100%; }
+      width: 630px; }
+      @media screen and (max-width: 769px) {
+        .menu1__item--active .menu1__content {
+          max-width: 100%; } }
+      @media screen and (max-width: 480px) {
+        .menu1__item--active .menu1__content {
+          max-width: 200px; } }
   .menu1__button {
     font-family: "AlegreyMedium";
     text-decoration: none;
@@ -1256,7 +1258,7 @@
         min-width: 4rem; } }
   .menu1__content {
     display: none;
-    width: 0;
+    width: 0px;
     max-width: 630px;
     -webkit-transition: width 0.3s;
     -o-transition: width 0.3s;
@@ -1319,9 +1321,9 @@
     -webkit-transition: right 0.3s;
     -o-transition: right 0.3s;
     transition: right 0.3s;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
   .slider__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1664,7 +1666,6 @@ body {
 
 .section {
   height: 100vh;
-  min-height: 650px;
   position: relative; }
   .section__title {
     text-transform: uppercase;

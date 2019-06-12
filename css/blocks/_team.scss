@@ -98,13 +98,13 @@
     &-comment {
       height: 0;
       overflow: hidden;
-      transition: height 1s ease;
+      transition: height .3s ease;
     }
 
     &--active {
-      transition: height 1s ease;
+      
       & .item__content-comment:last-child {
-        height: auto;
+        height: 80px;
         
       }
       & .item__content-author:after {
