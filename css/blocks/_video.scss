@@ -1,0 +1,116 @@
+.video {
+  &:after{
+    content: "";
+    background: url(/img/video/berrie.png)right center / contain   no-repeat ;
+    display: block;
+    width: rem(175px);
+    height: rem(265px);;
+    position: absolute;
+    bottom: -13%;
+    right: 0;
+   
+    z-index: 3;
+    @include phones {
+      bottom: -5%;
+      width: rem(56px);
+      height:rem(82px);
+    }
+  }
+  .section__title-video {
+    margin-bottom: 6%;
+  }
+
+  background: #f8faf9;
+  &__play {
+    cursor: pointer;
+    margin: 0.25rem;
+    height: 0;
+    width: 0;
+    border: 11px solid transparent;
+    border-left-color: #626262;
+    border-right-width: 0;
+    background: transparent;
+    outline: none;
+    transition: all 0.1s ease-out;
+    &--active {
+      border: 7px solid #626262;
+      height: 20px;
+      border-top: 0;
+      border-bottom: 0;
+      padding: 1px;
+    }
+  }
+  &__player {
+    width: 660px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .video__tag {
+      width: 100%;
+      
+    }
+    @include tablets {
+      width: 90%;
+    }
+
+  }
+  &__toolbar {
+    background-color: #3e3e3e;
+    width: 660px;
+    display: flex;
+    height: 35px;
+    margin-top: -1px;
+    justify-content: space-around;
+    .fas {
+      color: #626262;
+      font-size: rem(23px);
+    }
+    @include tablets {
+      width: 90%;
+    }
+  }
+
+  &__duration {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  &__sound {
+    display: flex;
+    align-items: center;
+    width: 14%;
+    justify-content: space-between;
+    height: 35px;
+    .sound__volume {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+  .duration__length {
+    width: 100%;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #626262;
+    appearance: none;
+    outline: none;
+    &--other {
+      width: 70%;
+      height: 4px;
+    }
+  }
+  .duration__length::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #626262;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

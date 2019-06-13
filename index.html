@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     
   </head>
   <body>
@@ -479,6 +479,39 @@
 
     </div>
   </section>
+
+
+
+<section class="section video">
+  
+  <div class="container video__container">
+    <h3 class="section__title section__title-video">
+      Как мы работаем
+    </h3>
+    <div class="video__player">
+    <video id="player" poster="img/video/video.png" class="video__tag">
+      <source src="img/video/video.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="video__toolbar">
+      <div class="video__duration">
+        <button class="video__play play"></button>
+        <input type="range" class="duration__length" id="durationLevel">
+      </div>
+      <div class="video__sound">
+        <i class='fas fa-volume-off' id="mic"></i>
+      <div class="sound__volume">
+        <input type="range" class="duration__length duration__length--other" id="micLevel">
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
   <section class="section delivery">
 
     <div class="container delivery-container">
@@ -589,5 +622,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 <script src="/js/script.js" charset="utf-8"></script>
+<script src="/js/player.js" charset="utf-8"></script>
   </body>
 </html>

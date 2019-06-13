@@ -12,6 +12,8 @@ var comments = document.querySelectorAll(".comment");
 var currentComment = 0;
 var slideInterval = setInterval(nextComment, 4000);
 
+var volume = document.querySelector(".fas");
+
 
 const slideLeft = document.querySelector(".btn__arrow--prev");
 const slideRight = document.querySelector(".btn__arrow--next");
@@ -107,8 +109,10 @@ sendButton.addEventListener("click", function (e) {
         closeModal.addEventListener("click",(e)=>{
             e.preventDefault();
             formModal.classList.remove("form__modal-container--active");
+            document.querySelector("body").style.overflow="visible";
         })
         formModal.classList.add("form__modal-container--active");
+        document.querySelector("body").style.overflow="hidden";
     }
     req.setRequestHeader("X-Requested-With", "XMLHttpRequest")
     req.send(message);
@@ -191,6 +195,7 @@ slideRight.addEventListener("click",(e)=>{
     e.preventDefault();
     moveRight();
 })
+
 
 
 
