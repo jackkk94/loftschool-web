@@ -21,8 +21,7 @@ const slider= document.querySelector("#slider");
 const slides = document.querySelectorAll(".slider__item");
 const slide= document.querySelector(".slider__item");
 let minRight = 0;
-let maxRight = (slides.length  - 1)*slide.offsetWidth;
-let step = slide.offsetWidth;
+
 let currentRight = 0;
 slider.style.right =currentRight;
 
@@ -164,7 +163,8 @@ function goToComment(n) {
 
 
 function moveLeft(){
-  
+    let maxRight = (slides.length  - 1)*slide.offsetWidth;
+    let step = slide.offsetWidth;
     if(currentRight > minRight)
     {
         currentRight -= step;
@@ -181,6 +181,8 @@ function moveLeft(){
 }
 
 function moveRight(){
+    let maxRight = (slides.length  - 1)*slide.offsetWidth;
+let step = slide.offsetWidth;
     if(currentRight < maxRight){
         currentRight += step;
         slider.style.right = currentRight +"px";
@@ -205,103 +207,103 @@ slideRight.addEventListener("click",(e)=>{
 
 
 
-// const sections = $(".section");
-// const display = $(".wrapper");
+const sections = $(".section");
+const display = $(".wrapper");
 
-// let inscroll = false;
+let inscroll = false;
 
-// const md = new MobileDetect(window.navigator.userAgent);
+const md = new MobileDetect(window.navigator.userAgent);
 
-// const isMobile = md.mobile();
+const isMobile = md.mobile();
 
-// const switchActiveClassInSideMenu = menuItemIndex => {
-//   $(".fixed-menu__item")
-//     .eq(menuItemIndex)
-//     .addClass("active")
-//     .siblings()
-//     .removeClass("active");
-// };
+const switchActiveClassInSideMenu = menuItemIndex => {
+  $(".fixed-menu__item")
+    .eq(menuItemIndex)
+    .addClass("active")
+    .siblings()
+    .removeClass("active");
+};
 
-// const performTransition = sectionEq => {
-//   if (inscroll) return;
+const performTransition = sectionEq => {
+  if (inscroll) return;
 
-//   const sectionEqNum = parseInt(sectionEq);
+  const sectionEqNum = parseInt(sectionEq);
 
-//   if (!!sectionEqNum === false)
-//     console.error("не верное значение для аргуемента sectionEq");
+  if (!!sectionEqNum === false)
+    console.error("не верное значение для аргуемента sectionEq");
 
-//   inscroll = true;
+  inscroll = true;
 
-//   const position = sectionEqNum * -100 + "%";
+  const position = sectionEqNum * -100 + "%";
 
-//   sections
-//     .eq(sectionEq)
-//     .addClass("active")
-//     .siblings()
-//     .removeClass("active");
+  sections
+    .eq(sectionEq)
+    .addClass("active")
+    .siblings()
+    .removeClass("active");
 
-//   display.css({
-//     transform: `translateY(${position})`
-//   });
+  display.css({
+    transform: `translateY(${position})`
+  });
 
-//   setTimeout(() => {
-//     inscroll = false;
-//     switchActiveClassInSideMenu(sectionEq);
-//   }, 1000 + 300); // продолжительность транзишна + 300мс - время для завершения инерции тачустройств
-// };
+  setTimeout(() => {
+    inscroll = false;
+    switchActiveClassInSideMenu(sectionEq);
+  }, 1000 + 300); // продолжительность транзишна + 300мс - время для завершения инерции тачустройств
+};
 
-// const scrollToSection = direction => {
-//   const activeSection = sections.filter(".active");
-//   const nextSection = activeSection.next();
-//   const prevSection = activeSection.prev();
+const scrollToSection = direction => {
+  const activeSection = sections.filter(".active");
+  const nextSection = activeSection.next();
+  const prevSection = activeSection.prev();
 
-//   if (direction === "next" && nextSection.length) {
-//     performTransition(nextSection.index());
-//   }
+  if (direction === "next" && nextSection.length) {
+    performTransition(nextSection.index());
+  }
 
-//   if (direction === "prev" && prevSection.length) {
-//     performTransition(prevSection.index());
-//   }
-// };
+  if (direction === "prev" && prevSection.length) {
+    performTransition(prevSection.index());
+  }
+};
 
-// $(".wrapper").on("wheel", e => {
-//   const deltaY = e.originalEvent.deltaY;
+$(".wrapper").on("wheel", e => {
+  const deltaY = e.originalEvent.deltaY;
+console.log(deltaY);
+  if (deltaY > 0) {
+    scrollToSection("next");
+  }
+  if (deltaY < 0) {
+    scrollToSection("prev");
+  }
+});
 
-//   if (deltaY > 0) {
-//     scrollToSection("next");
-//   }
-//   if (deltaY < 0) {
-//     scrollToSection("prev");
-//   }
-// });
+$('.wrapper').on('touchmove', e => {
+  e.preventDefault();
+});
 
-// $('.wrapper').on('touchmove', e => {
-//   e.preventDefault();
-// });
+$(document).on("keydown", e => {
+  switch (e.keyCode) {
+    case 38:
+      scrollToSection("prev");
+      break;
+    case 40:
+      scrollToSection("next");
+      break;
+  }
+});
 
-// $(document).on("keydown", e => {
-//   switch (e.keyCode) {
-//     case 38:
-//       scrollToSection("prev");
-//       break;
-//     case 40:
-//       scrollToSection("next");
-//       break;
-//   }
-// });
+$("[data-scroll-to]").on("click", e => {
+  e.preventDefault();
+  const target = $(e.currentTarget).attr("data-scroll-to");
 
-// $("[data-scroll-to]").on("click", e => {
-//   e.preventDefault();
-//   const target = $(e.currentTarget).attr("data-scroll-to");
+  performTransition(target);
+});
 
-//   performTransition(target);
-// });
-
-// if (isMobile) {
-//   $(window).swipe({
-//     swipe: function(event, direction) {
-//       const nextOrPrev = direction === "up" ? "next" : "prev";
-//       scrollToSection(nextOrPrev);
-//     }
-//   });
-// }
+if (isMobile) {
+  $(window).swipe({
+    swipe: function(event, direction) {
+      const nextOrPrev = direction === "up" ? "next" : "prev";
+      scrollToSection(nextOrPrev);
+    }
+  });
+}
