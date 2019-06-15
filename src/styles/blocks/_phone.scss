@@ -1,0 +1,14 @@
+.phone{
+  &__link{
+    text-decoration: none;
+    color:inherit;
+    font-size: rem(24px);
+    &:before {
+      content: url("/img/phone.png");
+      margin: 5px;
+    }
+  }
+  @include tablets(){
+    display: none;
+  }
+}

@@ -1,0 +1,200 @@
+$blue: #61c4d9;
+$bggrey: #f2f5f4;
+$green: #0f5a47;
+$black: #0d0d0d;
+$grey: #808080;
+$berrie: #cfdeda;
+$bg_grey: #f8faf9;
+$white: white;
+
+
+$tablets: 769px;
+$phones: 480px;
+$phones-small: 390px;
+
+
+
+
+
+@import "_misc/*.scss";
+@import "blocks/*.scss";
+
+
+html{
+  font-size: 16px;
+  height: 100%;
+  @include tablets{
+    font-size: 15px;
+  }
+  @include phones{
+    font-size: 14px;
+  }
+  @include phones-small{
+    font-size: 12px;
+  }
+
+}
+body {
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  font-family: "AlegreyaSans";
+  color: $black;
+  height: 100%;
+}
+.maincontent{
+  height: 100%;     
+  transition: transform 1s;     
+  will-change: transform;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  // min-width: 940px + 20px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section {
+  height: 100vh;
+ 
+  position: relative;
+  &__title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "AlegreyaSansBold";
+    font-size: rem(48px);
+    text-align: center;
+    width: rem(430px);
+    margin: 0px;
+    padding: 5px;
+    line-height: 1;
+    width: 100%;
+  }
+
+}
+
+.container {
+  max-width: rem(940px);
+  width:95%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @include tablets{
+    width:90%;
+  }
+  @include phones{
+    width:95%;
+  }
+}
+
+
+// tag styles reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    list-style: none;
+  }
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("/fonts/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AlegreyMedium";
+  src: url("/fonts/AlegreyaSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AlegreyLite";
+  src: url("/fonts/AlegreyaSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AlegreyaSansMedium";
+  src: url("/fonts/AlegreyaSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AlegreyaSansBold";
+  src: url("/fonts/AlegreyaSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("/fonts/MuseoSansCyrl.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AlegreyaSansExtraBold";
+  src: url("/fonts/AlegreyaSans-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Icons";
+  src: url("/fonts/icomoon.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

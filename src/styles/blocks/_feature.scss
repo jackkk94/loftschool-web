@@ -1,0 +1,61 @@
+.feature {
+  
+  width:33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablets(){
+    width:39%;
+  }
+  @include phones(){
+    width:80%;
+  }
+  &__pic {
+    background-color: $bggrey;
+    border-radius: 50%;
+    width: rem(95px);
+    height: rem(95px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:rem(15px);
+    &-img {
+      max-width: 100%;
+      stroke:#0d0d0d;
+      fill:#f2f5f4;
+    }
+
+  }
+  &__name {
+    font-size: rem(27px);
+    font-weight: bold;
+    margin-top:rem(12px);
+  }
+  &__text {
+    text-align: center;
+    margin: 0px;
+ 
+    font-size: rem(18px);
+    color:$grey;
+    margin-top:rem(10px);
+
+  }
+  &::after{
+    content: "";
+    display: block;
+    width: rem(70px);
+    position: relative;
+    top: rem(-194px);
+    left: rem(157px);
+    height: rem(50px);
+    background: url(/img/why/dots.png) no-repeat;
+    @include tablets(){
+      display: none;
+    }
+
+  }
+  &:last-child::after{
+    background: #fff;
+    content: "";
+  }
+}
