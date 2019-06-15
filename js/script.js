@@ -208,7 +208,7 @@ slideRight.addEventListener("click",(e)=>{
 
 
 const sections = $(".section");
-const display = $(".wrapper");
+const display = $(".maincontent");
 
 let inscroll = false;
 
@@ -242,7 +242,7 @@ const performTransition = sectionEq => {
     .siblings()
     .removeClass("active");
 
-  display.css({
+    sections.css({
     transform: `translateY(${position})`
   });
 

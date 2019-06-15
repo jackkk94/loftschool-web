@@ -44,6 +44,7 @@ $phones-small: 390px;
 
 html{
   font-size: 16px;
+  height: 100%;
   @include tablets{
     font-size: 15px;
   }
@@ -62,13 +63,18 @@ body {
   position: relative;
   font-family: "AlegreyaSans";
   color: $black;
+  height: 100%;
 }
-
+.maincontent{
+  height: 100%;     
+  transition: transform 1s;     
+  will-change: transform;
+}
 .wrapper {
   position: relative;
   width: 100%;
   // min-width: 940px + 20px;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
