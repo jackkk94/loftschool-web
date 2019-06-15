@@ -242,7 +242,7 @@ const performTransition = sectionEq => {
     .siblings()
     .removeClass("active");
 
-    sections.css({
+    display.css({
     transform: `translateY(${position})`
   });
 
