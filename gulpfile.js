@@ -102,6 +102,6 @@ gulp.task("watch", () => {
 })
 
 gulp.task("default", gulp.series('clean', 'fonts','images','sprites','copy:html', 'styles', 'scripts','server', 'watch'));
-gulp.task("build", gulp.series('clean', 'copy:html', 'styles', 'scripts'));
+gulp.task("build", gulp.series('clean', 'fonts','images','sprites','copy:html', 'styles', 'scripts'));
 
 
