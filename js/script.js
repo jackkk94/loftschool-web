@@ -165,6 +165,22 @@ function goToComment(n) {
 
 function moveLeft(){
   
+    if(currentRight > minRight)
+    {
+        currentRight -= step;
+        slider.style.right = currentRight +"px";
+    }
+    else{
+        currentRight = maxRight;
+        slider.style.right = maxRight +'px'
+    }
+    
+    
+    
+    
+}
+
+function moveRight(){
     if(currentRight < maxRight){
         currentRight += step;
         slider.style.right = currentRight +"px";
@@ -172,17 +188,6 @@ function moveLeft(){
     else{
         currentRight = minRight;
         slider.style.right = minRight +'px'
-    }
-}
-
-function moveRight(){
-    if(currentRight > minRight){
-        currentRight -= step;
-        slider.style.right = currentRight +"px";
-    }
-    else{
-        currentRight = maxRight;
-        slider.style.right = maxRight +'px'
     }
 }
 
